@@ -7,4 +7,8 @@ money_gave = eval(input("How much money did you give?"))
 #Compute the change
 change_back = money_gave - items_cost
 
-print(change_back)
+#Declarations of Coins
+quarter = 25
+dime = 10
+nickel = 5
+penny = 1
