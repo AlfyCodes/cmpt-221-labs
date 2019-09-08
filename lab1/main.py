@@ -1,5 +1,8 @@
 
-
+''' 
+get_info() Function will ask and grab the Total Cost of the customer's Items
+and how much Money was given then return those values in items_cost and money_gave
+'''
 def get_info():
 
     #Find the total cost of the customer's items
@@ -10,6 +13,9 @@ def get_info():
 
     #Return values
     return items_cost, money_gave
+def get_change(items_cost, money_gave):
+    change = money_gave - items_cost
+    return change
 
 
 
@@ -21,6 +27,8 @@ calculate = True
 while calculate == True:
     
     items_cost, money_gave = get_info()
+
+    change = get_change(items_cost, money_gave)
 
     
     
