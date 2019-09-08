@@ -17,8 +17,8 @@ Child Class Motorcycle
 Will handle three properties
 '''
 class Motorcycle(Vechicle):
-    def __init__(self,fuel_max,fuel_current,miles_current):
-        super()__init__(self,make,model,color)
+    def __init__(fuel_max,fuel_current,miles_current):
+        super().__init__(self,make,model,color)
         self.fuel_max = fuel_max
         self.fuel_current = fuel_current
         self.miles_current = miles_current
@@ -48,5 +48,8 @@ class Bicycle(Vechicle):
     def __init__(self,condition):
         self.condition = condition
 
-bike = Motorcycle(20,10,100)
+#bike = Motorcycle(Harely,Street,Red,20,10,1000)
+ 
+#Vechicle.drive(bike)
 
+#print(bike)
