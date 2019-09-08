@@ -86,9 +86,9 @@ def get_coins(change):
 
 def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins):
  #Print out details for display
-    print('\nYour total cost of items: '+str(items_cost))
+    print('\nYour total cost of items: $'+str(items_cost))
 
-    print('You gave: '+str(money_gave))
+    print('You gave: $'+str(money_gave))
 
     print('\nYou should receive the following change:')
 
@@ -105,7 +105,7 @@ def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes
     print('Pennies: ' +str(amount_of_pennies))
 
     print('\nTotal number of coins: ' +str(total_coins))
-    print('Total change: '+str(change / 100))
+    print('Total change: $'+str(change / 100))
 '''
 main() Function
 To help easily do error handling.
