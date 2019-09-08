@@ -79,14 +79,14 @@ def get_coins(change):
 
 def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins):
  #Print out details for display
-    print('Your total cost of items: '+str(items_cost))
+    print('\nYour total cost of items: '+str(items_cost))
 
     print('You gave: '+str(money_gave))
 
-    print('You should receive the following change:')
+    print('\nYou should receive the following change:')
 
     #Show amount of Quarters
-    print('Quarters: ' +str(amount_of_quarters))
+    print('\nQuarters: ' +str(amount_of_quarters))
     
     #Show amount of Dimes
     print('Dimes: ' +str(amount_of_dimes))
@@ -97,7 +97,7 @@ def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes
     #Show amount of Pennies
     print('Pennies: ' +str(amount_of_pennies))
 
-    print('Total number of coins: ' +str(total_coins))
+    print('\nTotal number of coins: ' +str(total_coins))
 #Start Loop
 
 '''
