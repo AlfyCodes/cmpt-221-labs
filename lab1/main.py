@@ -16,10 +16,14 @@ dime = 10
 nickel = 5
 penny = 1
 
+print('Your total cost of items: '+str(items_cost))
+
+print('You gave: '+str(money_gave))
+
+print('You should receive the following change:')
+
 #Find the amount of Quarters we need
 amount_of_quarters = int(change_back // quarter)
-
-print('You should receive')
 
 #Test Quarters
 print('Quarters: ' +str(amount_of_quarters))
@@ -53,3 +57,9 @@ print('Pennies: ' +str(amount_of_pennies))
 
 #Update change_back 
 change_back = change_back - (amount_of_pennies * penny)
+
+#Total coins
+total_coins = amount_of_quarters + amount_of_dimes + amount_of_nickels + amount_of_pennies
+
+print('Total number of coins: ' +str(total_coins))
+
