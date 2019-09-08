@@ -1,6 +1,7 @@
 
 ''' 
-get_info() Function will ask and grab the Total Cost of the customer's Items
+get_info() Function 
+Will ask and grab the Total Cost of the customer's Items
 and how much Money was given then return those values in items_cost and money_gave
 '''
 def get_info():
@@ -33,7 +34,7 @@ adn the total of coins.
 '''
 def get_coins(change):
     '''
-    set_change() Inner Function
+    get_new_change() Inner Function
     To update the change so we can properly find
     how much of each coin the user will get back
     '''
@@ -76,32 +77,16 @@ def get_coins(change):
 
     return amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins
 
-
-#Start Loop
-
-#Boolean type for loop
-calculate = True
-
-while calculate == True:
-    4.5
-    items_cost, money_gave = get_info()
-
-    change = get_change(items_cost, money_gave)
-
-    amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins = get_coins(change)
-
-    
-
-    #Print out details for display
+def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins):
+ #Print out details for display
     print('Your total cost of items: '+str(items_cost))
 
     print('You gave: '+str(money_gave))
 
     print('You should receive the following change:')
 
-
     #Show amount of Quarters
-    print('Quarters: ' +str(amount_of_quarters))s
+    print('Quarters: ' +str(amount_of_quarters))
     
     #Show amount of Dimes
     print('Dimes: ' +str(amount_of_dimes))
@@ -113,6 +98,24 @@ while calculate == True:
     print('Pennies: ' +str(amount_of_pennies))
 
     print('Total number of coins: ' +str(total_coins))
+#Start Loop
+
+'''
+Main part of the program that will call the functions
+'''
+
+#Boolean type for loop
+calculate = True
+
+while calculate == True:
+
+    items_cost, money_gave = get_info()
+
+    change = get_change(items_cost, money_gave)
+
+    amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins = get_coins(change)
+
+    display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins)
     
     #Ask User if they want to calculate again
     print('Would you like to make another calculation? [y/n] ')
