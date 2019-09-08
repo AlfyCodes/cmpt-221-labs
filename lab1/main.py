@@ -131,5 +131,6 @@ def main():
         #if statement, if User choices other than 'y' then stop loop and end program. 
         if choice != 'y':
             calculate = False
+            print('Exiting Program.')
 #Start the program
 main()
