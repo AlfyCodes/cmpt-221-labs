@@ -1,65 +1,79 @@
-#Find the total cost of the customer's items
-items_cost = eval(input("What is the total cost of your items?"))
+#Start Loop
 
-#Ask user how much money was given
-money_gave = eval(input("How much money did you give?"))
+#Boolean type for loop
+calculate = True
 
-#Compute the change
-change_back = money_gave - items_cost
+while calculate == True:
+    #Find the total cost of the customer's items
+    items_cost = eval(input("What is the total cost of your items? "))
 
-#Get rid of the decimal
-change_back = change_back * 100
+    #Ask user how much money was given
+    money_gave = eval(input("How much money did you give? "))
 
-#Declarations of Coins
-quarter = 25
-dime = 10
-nickel = 5
-penny = 1
+    #Compute the change
+    change_back = money_gave - items_cost
 
-print('Your total cost of items: '+str(items_cost))
+    #Get rid of the decimal
+    change_back = change_back * 100
 
-print('You gave: '+str(money_gave))
+    #Declarations of Coins
+    quarter = 25
+    dime = 10
+    nickel = 5
+    penny = 1
 
-print('You should receive the following change:')
+    #Print out details for display
+    print('Your total cost of items: '+str(items_cost))
 
-#Find the amount of Quarters we need
-amount_of_quarters = int(change_back // quarter)
+    print('You gave: '+str(money_gave))
 
-#Test Quarters
-print('Quarters: ' +str(amount_of_quarters))
+    print('You should receive the following change:')
 
-#Update change_back 
-change_back = change_back - (amount_of_quarters * quarter)
+    #Find the amount of Quarters we need
+    amount_of_quarters = int(change_back // quarter)
 
-#Find the amount of Dimes to return
-amount_of_dimes = int(change_back // dime)
+    #Show amount of Quarters
+    print('Quarters: ' +str(amount_of_quarters))
 
-#Test Dimes
-print('Dimes: ' +str(amount_of_dimes))
+    #Update change_back 
+    change_back = change_back - (amount_of_quarters * quarter)
 
-#Update change_back 
-change_back = change_back - (amount_of_dimes * dime)
+    #Find the amount of Dimes to return
+    amount_of_dimes = int(change_back // dime)
 
-#Find the amount of Nickels to return
-amount_of_nickels = int(change_back // nickel)
+    #Show amount of Dimes
+    print('Dimes: ' +str(amount_of_dimes))
 
-#Test Nickels
-print('Nickels: ' +str(amount_of_nickels))
+    #Update change_back 
+    change_back = change_back - (amount_of_dimes * dime)
 
-#Update change_back 
-change_back = change_back - (amount_of_nickels * nickel)
+    #Find the amount of Nickels to return
+    amount_of_nickels = int(change_back // nickel)
 
-#Find the amount of pennies to return
-amount_of_pennies = int(change_back // penny)
+    #Show amount of Nickels
+    print('Nickels: ' +str(amount_of_nickels))
 
-#Test Pennies
-print('Pennies: ' +str(amount_of_pennies))
+    #Update change_back 
+    change_back = change_back - (amount_of_nickels * nickel)
 
-#Update change_back 
-change_back = change_back - (amount_of_pennies * penny)
+    #Find the amount of pennies to return
+    amount_of_pennies = int(change_back // penny)
 
-#Total coins
-total_coins = amount_of_quarters + amount_of_dimes + amount_of_nickels + amount_of_pennies
+    #Show amount of Pennies
+    print('Pennies: ' +str(amount_of_pennies))
 
-print('Total number of coins: ' +str(total_coins))
+    #Update change_back 
+    change_back = change_back - (amount_of_pennies * penny)
 
+    #Total coins
+    total_coins = amount_of_quarters + amount_of_dimes + amount_of_nickels + amount_of_pennies
+
+    print('Total number of coins: ' +str(total_coins))
+    
+    #Ask User if they want to calculate again
+    print('Would you like to make another calculation? [y/n] ')
+    choice = input()
+
+    #if statement, if User choices other than 'y' then stop loop and end program. 
+    if choice != 'y':
+        calculate = False
