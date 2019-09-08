@@ -105,6 +105,7 @@ def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes
     print('Pennies: ' +str(amount_of_pennies))
 
     print('\nTotal number of coins: ' +str(total_coins))
+    print('Total change: '+str(change / 100))
 '''
 main() Function
 To help easily do error handling.
@@ -125,7 +126,7 @@ def main():
         display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins)
         
         #Ask User if they want to calculate again
-        print('Would you like to make another calculation? [y/n] ')
+        print('\nWould you like to make another calculation? [y/n] ')
         choice = input()
 
         #if statement, if User choices other than 'y' then stop loop and end program. 
