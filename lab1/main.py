@@ -25,7 +25,56 @@ def get_change(items_cost, money_gave):
     #Gets rid of the decimal by mulitplaying by 100 so we can just deal with whole numbers
     change = change * 100
     return change
+'''
+get_coins Function
+Takes in change as a parameter then computes
+how many of each coin the user will get back 
+adn the total of coins.
+'''
+def get_coins(change):
+    '''
+    set_change() Inner Function
+    To update the change so we can properly find
+    how much of each coin the user will get back
+    '''
+    def get_new_change(change,coin_amount,coin):
+        change = change - (coin_amount * coin)
+        return change
+    
+    #Declarations of Coins
+    quarter = 25
+    dime = 10
+    nickel = 5
+    penny = 1
 
+    #Find the amount of Quarters we need
+    amount_of_quarters = int(change // quarter)
+
+    #Update change
+    change = get_new_change(change,amount_of_quarters,quarter)
+
+    #Find the amount of Dimes to return
+    amount_of_dimes = int(change // dime)
+
+    #Update change
+    change = get_new_change(change,amount_of_dimes,dime)
+
+    #Find the amount of Nickels to return
+    amount_of_nickels = int(change // nickel)
+
+    #Update change
+    change = get_new_change(change,amount_of_nickels,nickel)
+
+    #Find the amount of pennies to return
+    amount_of_pennies = int(change // penny)
+
+    #Update change
+    change = get_new_change(change,amount_of_pennies,penny)
+
+    #The sum of coins from each type of coin
+    total_coins = amount_of_quarters + amount_of_dimes + amount_of_nickels + amount_of_pennies
+
+    return amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins
 
 
 #Start Loop
@@ -34,18 +83,14 @@ def get_change(items_cost, money_gave):
 calculate = True
 
 while calculate == True:
-    
+    4.5
     items_cost, money_gave = get_info()
 
     change = get_change(items_cost, money_gave)
 
+    amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins = get_coins(change)
 
-
-    #Declarations of Coins
-    quarter = 25
-    dime = 10
-    nickel = 5
-    penny = 1
+    
 
     #Print out details for display
     print('Your total cost of items: '+str(items_cost))
@@ -54,44 +99,18 @@ while calculate == True:
 
     print('You should receive the following change:')
 
-    #Find the amount of Quarters we need
-    amount_of_quarters = int(change_back // quarter)
 
     #Show amount of Quarters
-    print('Quarters: ' +str(amount_of_quarters))
-
-    #Update change_back 
-    change_back = change_back - (amount_of_quarters * quarter)
-
-    #Find the amount of Dimes to return
-    amount_of_dimes = int(change_back // dime)
-
+    print('Quarters: ' +str(amount_of_quarters))s
+    
     #Show amount of Dimes
     print('Dimes: ' +str(amount_of_dimes))
-
-    #Update change_back 
-    change_back = change_back - (amount_of_dimes * dime)
-
-    #Find the amount of Nickels to return
-    amount_of_nickels = int(change_back // nickel)
 
     #Show amount of Nickels
     print('Nickels: ' +str(amount_of_nickels))
 
-    #Update change_back 
-    change_back = change_back - (amount_of_nickels * nickel)
-
-    #Find the amount of pennies to return
-    amount_of_pennies = int(change_back // penny)
-
     #Show amount of Pennies
     print('Pennies: ' +str(amount_of_pennies))
-
-    #Update change_back 
-    change_back = change_back - (amount_of_pennies * penny)
-
-    #Total coins
-    total_coins = amount_of_quarters + amount_of_dimes + amount_of_nickels + amount_of_pennies
 
     print('Total number of coins: ' +str(total_coins))
     
