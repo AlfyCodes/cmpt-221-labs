@@ -25,6 +25,13 @@ def get_change(items_cost, money_gave):
 
     #Gets rid of the decimal by mulitplaying by 100 so we can just deal with whole numbers
     change = change * 100
+    
+    #Error handling, if the change comes back negative, prompts the user to try again and goes back to main()
+    if change < 0:
+        print('\nYou do not have enough money, try again\n')
+        main()
+    
+
     return change
 '''
 get_coins Function
@@ -98,29 +105,31 @@ def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes
     print('Pennies: ' +str(amount_of_pennies))
 
     print('\nTotal number of coins: ' +str(total_coins))
-#Start Loop
-
 '''
-Main part of the program that will call the functions
+main() Function
+To help easily do error handling.
+This function will run all other functions within.
 '''
+def main():
+    #Boolean type for loop
+    calculate = True
+    #Start Loop: while calculate is true, the program will run
+    while calculate == True:
 
-#Boolean type for loop
-calculate = True
+        items_cost, money_gave = get_info()
 
-while calculate == True:
+        change = get_change(items_cost, money_gave)
 
-    items_cost, money_gave = get_info()
+        amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins = get_coins(change)
 
-    change = get_change(items_cost, money_gave)
+        display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins)
+        
+        #Ask User if they want to calculate again
+        print('Would you like to make another calculation? [y/n] ')
+        choice = input()
 
-    amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins = get_coins(change)
-
-    display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes,amount_of_nickels,amount_of_pennies,total_coins)
-    
-    #Ask User if they want to calculate again
-    print('Would you like to make another calculation? [y/n] ')
-    choice = input()
-
-    #if statement, if User choices other than 'y' then stop loop and end program. 
-    if choice != 'y':
-        calculate = False
+        #if statement, if User choices other than 'y' then stop loop and end program. 
+        if choice != 'y':
+            calculate = False
+#Start the program
+main()
