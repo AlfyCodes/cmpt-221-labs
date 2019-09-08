@@ -1,8 +1,15 @@
 
 
-def get_cost():
+def get_info():
+
+    #Find the total cost of the customer's items
     items_cost = eval(input("What is the total cost of your items? "))
-    return items_cost
+
+    #Ask user how much money was given
+    money_gave = eval(input("How much money did you give? "))
+
+    #Return values
+    return items_cost, money_gave
 
 
 
@@ -12,11 +19,11 @@ def get_cost():
 calculate = True
 
 while calculate == True:
-    #Find the total cost of the customer's items
-    items_cost = get_cost()
+    
+    items_cost, money_gave = get_info()
 
-    #Ask user how much money was given
-    money_gave = eval(input("How much money did you give? "))
+    
+    
 
     #Compute the change
     change_back = money_gave - items_cost
