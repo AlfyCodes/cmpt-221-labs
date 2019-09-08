@@ -19,6 +19,8 @@ penny = 1
 #Find the amount of Quarters we need
 amount_of_quarters = int(change_back // quarter)
 
+print('You should receive')
+
 #Test Quarters
 print('Quarters: ' +str(amount_of_quarters))
 
@@ -42,3 +44,12 @@ print('Nickels: ' +str(amount_of_nickels))
 
 #Update change_back 
 change_back = change_back - (amount_of_nickels * nickel)
+
+#Find the amount of pennies to return
+amount_of_pennies = int(change_back // penny)
+
+#Test Pennies
+print('Pennies: ' +str(amount_of_pennies))
+
+#Update change_back 
+change_back = change_back - (amount_of_pennies * penny)
