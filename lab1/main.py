@@ -13,8 +13,17 @@ def get_info():
 
     #Return values
     return items_cost, money_gave
+'''
+get_change Function
+Takes in two Parameters then computes the change that 
+the user should get back
+'''    
 def get_change(items_cost, money_gave):
+    #Compute the change
     change = money_gave - items_cost
+
+    #Gets rid of the decimal by mulitplaying by 100 so we can just deal with whole numbers
+    change = change * 100
     return change
 
 
@@ -30,14 +39,7 @@ while calculate == True:
 
     change = get_change(items_cost, money_gave)
 
-    
-    
 
-    #Compute the change
-    change_back = money_gave - items_cost
-
-    #Get rid of the decimal
-    change_back = change_back * 100
 
     #Declarations of Coins
     quarter = 25
