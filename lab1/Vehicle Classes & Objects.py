@@ -40,7 +40,7 @@ class Vehicle:
         elif choice == '5':
             #Figure out how to call a child class dependant on vehicle type.
             print('Woopie Specail stuff')
-            main.special_menu()
+            main()
             self.menu()
         elif choice == '6':
             print('Exiting Program')
@@ -184,6 +184,9 @@ def main():
 
     def special_menu():
         vehicle.special_menu()
+#TESTING
+    def test():
+        main.special_menu()
 
 #Start Program
 main()
