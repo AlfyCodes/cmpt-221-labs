@@ -49,7 +49,7 @@ class Vehicle:
         elif choice == '6':
             #Exit Program
             print('Exiting Program')
-            SystemExit
+            quit()
         else:
             #Error handaling
             print('\nPlease enter a numberic value 1-6')
