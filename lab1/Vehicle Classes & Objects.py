@@ -6,14 +6,14 @@ class Vehicle:
     '''
     The Constructor for all Child Clases
     '''
-    def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
+    def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
         #Sets the following properties Make, Model, Color, Gas Capacity, Gas Milage, Milage
         self.make = make
         self.model = model 
         self.color = color
         self.gas_capacity = gas_capacity
-        self.gas_milage = gas_milage
-        self.milage = milage
+        self.gas_mileage = gas_mileage
+        self.mileage = mileage
     '''
     Function Menu
     Interacitve function that the user can use
@@ -21,21 +21,26 @@ class Vehicle:
     vehicle type
     '''
     def menu(self):
-
+        #Menu Text
         print('\n\nWelcome to the Menu\n1. Calculate Drive\n2. Your Gas Capacity\n3. Current Gas Milage\n4. Current Milage\n5. Special Features\n6. Exit Program')
         choice = input()
 
+        #Upon user choice, step into one of the if statements.
         if choice == '1':
+            #Start drive function
             self.drive() 
         elif choice == '2':
+            #Display Gas Capacity
             print('choice 2')
             print('\nYour '+self.make+' ' +str(self.model)+' Gas Capacity is ' +str(self.gas_capacity))
             self.menu()
         elif choice == '3':
-            print('\nCurrent Gas Milage: '+str(self.gas_milage))
+            #Display Current Gas Mileage
+            print('\nCurrent Gas Mileage: '+str(self.gas_mileage))
             self.menu()
         elif choice == '4':
-            print('\nCurrent Car Milage: '+str(self.milage))
+            #Display Current mileage
+            print('\nCurrent Car Mileage: '+str(self.mileage))
             self.menu()
         elif choice == '5':
             #Figure out how to call a child class dependant on vehicle type.
@@ -43,9 +48,11 @@ class Vehicle:
             special_menu(self)
             self.menu()
         elif choice == '6':
+            #Exit Program
             print('Exiting Program')
             SystemExit
         else:
+            #Error handaling
             print('\nPlease enter a numberic value 1-6')
             self.menu()
 
@@ -55,63 +62,64 @@ class Vehicle:
     Print the complete data of the vehicle
     '''   
     def print_data(self):
-
-        print('\nVehicle created with the following data:\n\nMake: '+self.make,'\nModel: '+self.model, '\nColor: '+self.color,'\nCar Total Gas Milage: '+self.gas_capacity,'\nCurrent Gas Milage: '+self.gas_milage, '\nTotal Milage: '+self.milage)
+        #Display back the data that was given
+        print('\nVehicle created with the following data:\n\nMake: '+self.make,'\nModel: '+self.model, '\nColor: '+self.color,'\nCar Total Gas Milage: '+self.gas_capacity,'\nCurrent Gas Milage: '+self.gas_mileage, '\nTotal Milage: '+self.mileage)
     '''
     drive Function
-    Alters ther milage and gas milage depending on how far the person drove
+    Alters ther mileage and gas mileage depending on how far the person drove
     '''
     def drive(self):
-        
+        #Get the miles driven
         print ('How many miles will/did you drive?')
         total_drive = input()
         int_total_drive = int(total_drive)
+        #Error handling (not full proof) 
         if int_total_drive > 0:
-            #Problem adding together ints. TypeError: can only concatenate str (not "int") to str
-            
-            self.milage = int(self.milage)
-            self.gas_milage = int(self.gas_milage)
-
-            self.milage = self.milage + int_total_drive
-            self.gas_milage = self.gas_milage - int_total_drive
-            print('\nUpdated Gas Milage: '+str(self.gas_milage)+ '\nUpdated Milage: '+str(self.milage))
+            #Concatanate variables for adding
+            self.mileage = int(self.mileage)
+            self.gas_mileage = int(self.gas_mileage)
+            #Update the Milage and Gas Milage
+            self.mileage = self.mileage + int_total_drive
+            self.gas_mileage = self.gas_mileage - int_total_drive
+            #Display updated results
+            print('\nUpdated Gas Milage: '+str(self.gas_mileage)+ '\nUpdated Milage: '+str(self.mileage))
+            #Bring user back to main menu
             self.menu()
         else:
             print('Please enter a postive numeric value')
             self.drive()
     
 '''
-Child Class Motorcycle
-CURRENTLY TESTING THIS CLASS ONLY
+Child Class Motorcycle: Parent Class is Vehicle 
 '''
 class Motorcycle(Vehicle):
-    def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
-        super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
+        super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the special Menu! Motorcycle')
 '''
-Child Class Truck
+Child Class Truck: Parent Class is Vehicle
 '''        
 class Truck(Vehicle):
-    def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
-        super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
+        super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the special Menu! Truck')
         
 '''
-Child Class Bus
+Child Class Bus: Parent Class is Vehicle
 '''    
 class Bus(Vehicle):
-    def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
-        super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
+        super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the special Menu! Bus')
 '''
-Child Class Car
+Child Class Car: Parent Class is Vehicle
 '''
 class Car(Vehicle):
-    def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
-        super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
+        super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the Car special Menu!')
 
@@ -139,12 +147,12 @@ def get_data():
     gas_capacity = input()
 
     print('What is the current Gas Miles of your vehicle?')
-    gas_milage = input()
+    gas_mileage = input()
 
     print('What is the Milage of your vehicle?')
-    milage = input()
+    mileage = input()
 
-    return(make,model,color,gas_capacity,gas_milage,milage)
+    return(make,model,color,gas_capacity,gas_mileage,mileage)
 
 '''
 Prompt user for data to store into a new vehicle variable
@@ -158,23 +166,23 @@ def create_vehicle():
     #Error Handling and the creation of Class varible depending on user's car
     if type_vehicle == 'car':
         print('you chose car')
-        make,model,color,gas_capacity,gas_milage,milage = get_data()
-        car = Car(make,model,color,gas_capacity,gas_milage,milage)
+        make,model,color,gas_capacity,gas_mileage,mileage = get_data()
+        car = Car(make,model,color,gas_capacity,gas_mileage,mileage)
         return car
     elif type_vehicle == 'truck':
         print('you chose truck')
-        make,model,color,gas_capacity,gas_milage,milage = get_data()
-        truck = Truck(make,model,color,gas_capacity,gas_milage,milage)
+        make,model,color,gas_capacity,gas_mileage,mileage = get_data()
+        truck = Truck(make,model,color,gas_capacity,gas_mileage,mileage)
         return truck
     elif type_vehicle == 'motorcycle':
         print('you chose bike')
-        make,model,color,gas_capacity,gas_milage,milage = get_data()
-        motorcycle = Motorcycle(make,model,color,gas_capacity,gas_milage,milage)
+        make,model,color,gas_capacity,gas_mileage,mileage = get_data()
+        motorcycle = Motorcycle(make,model,color,gas_capacity,gas_mileage,mileage)
         return motorcycle
     elif type_vehicle == 'bus':
         print('you chose bus')
-        make,model,color,gas_capacity,gas_milage,milage = get_data()
-        bus = Bus(make,model,color,gas_capacity,gas_milage,milage)
+        make,model,color,gas_capacity,gas_mileage,mileage = get_data()
+        bus = Bus(make,model,color,gas_capacity,gas_mileage,mileage)
         return bus
     else:
         print('Please enter a valid Vehicle type.')
