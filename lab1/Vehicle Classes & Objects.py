@@ -29,13 +29,13 @@ class Vehicle:
             self.drive() 
         elif choice == '2':
             print('choice 2')
-            print('\nYour '+self.make+' ' +self.model+' Gas Capacity is ' +self.gas_capacity)
+            print('\nYour '+self.make+' ' +str(self.model)+' Gas Capacity is ' +str(self.gas_capacity))
             self.menu()
         elif choice == '3':
-            print('\nCurrent Gas Milage: '+self.gas_milage)
+            print('\nCurrent Gas Milage: '+str(self.gas_milage))
             self.menu()
         elif choice == '4':
-            print('\nCurrent Car Milage: '+self.milage)
+            print('\nCurrent Car Milage: '+str(self.milage))
             self.menu()
         elif choice == '5':
             #Figure out how to call a child class dependant on vehicle type.
@@ -69,9 +69,13 @@ class Vehicle:
         if int_total_drive > 0:
             #Problem adding together ints. TypeError: can only concatenate str (not "int") to str
             
-            self.milage = int(self.milage + int_total_drive)
+            self.milage = int(self.milage)
+            self.gas_milage = int(self.gas_milage)
+
+            self.milage = self.milage + int_total_drive
             self.gas_milage = self.gas_milage - int_total_drive
-            print('\nUpdated Gas Milage: '+self.gas_milage+ '\nUpdated Milage: '+self.milage)
+            print('\nUpdated Gas Milage: '+str(self.gas_milage)+ '\nUpdated Milage: '+str(self.milage))
+            self.menu()
         else:
             print('Please enter a postive numeric value')
             self.drive()
