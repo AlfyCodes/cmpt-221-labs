@@ -104,7 +104,22 @@ class Truck(Vehicle):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the Truck special menu!')
-        
+        #Menu Text
+        print('\n1. Ride your truck in our mud field! \n2. Get bigger wheels! (cause whynot?) \n3. Return to main menu')
+        choice = input()
+
+        #Upon user choice, step into one of the if statements.
+        if choice == '1':
+            #Dirt field
+            print('YeeeeeHAWWWWW! (dirt is all over your truck but you shreded the field like a boss!)')
+            self.special_menu()
+        elif choice == '2':
+            #Get bigger wheels
+            print('\nYour wheels are now hundred times bigger! Huh?... take em off?)
+            self.special_menu()
+        elif choice == '3':
+            #Return to Main Menu
+            self.menu()
 '''
 Child Class Bus: Parent Class is Vehicle
 '''    
