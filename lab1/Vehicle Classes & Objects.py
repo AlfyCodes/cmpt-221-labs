@@ -4,7 +4,7 @@ will construct properties for vechicle type
 '''
 class Vehicle:
     '''
-    The Constructor for all child clases
+    The Constructor for all Child Clases
     '''
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         #Sets the following properties Make, Model, Color, Gas Capacity, Gas Milage, Milage
@@ -15,12 +15,14 @@ class Vehicle:
         self.gas_milage = gas_milage
         self.milage = milage
     '''
+    print_data Function
     Print the complete data of the vehicle
     '''   
     def print_data(self):
 
         print(self.make,self.model,self.color,self.gas_capacity,self.gas_milage,self.milage)
     '''
+    drive Function
     Alters ther milage and gas milage depending on how far the person drove
     '''
     def drive(self,gas_milage,milage,total_drive):
@@ -68,7 +70,14 @@ def get_data():
         print ('What type_vehicle of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
         type_vehicle = input()
         type_vehicle = type_vehicle.lower()
+'''
+CHECKPOINT
+Need to go through and make sure we are using the right class upon
+the users input. This is the next implementation...
+Example: User chose car... Store all data into Class Car which will super() into Parent Class
 
+Goodnight!
+'''
         #Error Handling - completed but needs adjustments to flow with the project
         if type_vehicle == 'car' or type_vehicle == 'truck' or type_vehicle == 'motorcycle' or type_vehicle == 'bus':
             print('you picked the right type_vehicle')
