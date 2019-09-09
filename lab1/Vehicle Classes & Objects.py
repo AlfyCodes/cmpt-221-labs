@@ -38,7 +38,9 @@ class Vehicle:
             print('\nCurrent Car Milage: '+self.milage)
             self.menu()
         elif choice == '5':
+            #Figure out how to call a child class dependant on vehicle type.
             print('Woopie Specail stuff')
+            main.special_menu()
             self.menu()
         elif choice == '6':
             print('Exiting Program')
@@ -78,12 +80,16 @@ CURRENTLY TESTING THIS CLASS ONLY
 class Motorcycle(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def special_menu(self):
+        print('\n\nWelcome to the special Menu!')
 '''
 Child Class Truck
 '''        
 class Truck(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def special_menu(self):
+        print('\n\nWelcome to the special Menu!')
         
 '''
 Child Class Bus
@@ -91,12 +97,16 @@ Child Class Bus
 class Bus(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def special_menu(self):
+        print('\n\nWelcome to the special Menu!')
 '''
 Child Class Bicycle
 '''
 class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
+    def special_menu(self):
+        print('\n\nWelcome to the special Menu!')
 
 
 '''
@@ -171,6 +181,9 @@ def main():
     vehicle = create_vehicle()
     vehicle.print_data()
     vehicle.menu()
+
+    def special_menu():
+        vehicle.special_menu()
 
 #Start Program
 main()
