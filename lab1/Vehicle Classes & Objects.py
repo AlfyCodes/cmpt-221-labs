@@ -98,17 +98,17 @@ class Motorcycle(Vehicle):
         print('\n\nWelcome to the Motorcycle special menu!')
 
         #Menu Text
-        print('\n1. Ride your truck in our mud field! \n2. Get bigger wheels! (cause whynot?) \n3. Return to main menu')
+        print('\n1. Pop a wheelie!!! \n2. Customize your helmet! \n3. Return to main menu')
         choice = input()
 
         #Upon user choice, step into one of the if statements.
         if choice == '1':
-            #Dirt field
-            print('YeeeeeHAWWWWW! (dirt is all over your truck but you shreded the field like a boss!)')
+            #Pop a wheelie!
+            print('Pop that wheelie!!! WOOOOOO.... oh wait no.... ugh now the lot has a skid mark')
             self.special_menu()
         elif choice == '2':
-            #Get bigger wheels
-            print('\nYour wheels are now hundred times bigger! Huh?... take em off?)
+            #Customize helmet
+            print('\nBAM! a new helmet for your sweet ride! What do you mean Reptar is not your ideal of cool?!?!')
             self.special_menu()
         elif choice == '3':
             #Return to Main Menu
