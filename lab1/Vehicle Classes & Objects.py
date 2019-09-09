@@ -31,7 +31,6 @@ class Vehicle:
             self.drive() 
         elif choice == '2':
             #Display Gas Capacity
-            print('choice 2')
             print('\nYour '+self.make+' ' +str(self.model)+' Gas Capacity is ' +str(self.gas_capacity))
             self.menu()
         elif choice == '3':
@@ -96,7 +95,7 @@ class Motorcycle(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu! Motorcycle')
+        print('\n\nWelcome to the Motorcycle special menu!')
 '''
 Child Class Truck: Parent Class is Vehicle
 '''        
@@ -104,7 +103,7 @@ class Truck(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu! Truck')
+        print('\n\nWelcome to the Truck special menu!')
         
 '''
 Child Class Bus: Parent Class is Vehicle
@@ -113,7 +112,9 @@ class Bus(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu! Bus')
+        
+        print('\n\nWelcome to the Bus special menu!')
+        
 '''
 Child Class Car: Parent Class is Vehicle
 '''
@@ -121,7 +122,24 @@ class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_mileage,mileage):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
-        print('\n\nWelcome to the Car special Menu!')
+        print('\n\nWelcome to the Car special menu!')
+        #Menu Text
+        print('\n1. Order the babe magnet special! (no refunds) \n2. Vroom your car! \n3. Return to main menu')
+        choice = input()
+
+        #Upon user choice, step into one of the if statements.
+        if choice == '1':
+            #Order the babe magnet
+            print('Well, well, well... Player One just entered the building!\n(your babe magnet special has been ordered)')
+            self.special_menu()
+        elif choice == '2':
+            #Vroom vroom?
+            print('choice 2')
+            print('\n(vroom... vroom!...) Listen... I am crunching for time here, what did you expect?')
+            self.special_menu()
+        elif choice == '3':
+            #Return to Main Menu
+            self.menu()
 
 
 '''
