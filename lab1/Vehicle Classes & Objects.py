@@ -43,7 +43,6 @@ class Vehicle:
             self.menu()
         elif choice == '5':
             #Figure out how to call a child class dependant on vehicle type.
-            print('Woopie Specail stuff')
             special_menu(self)
             self.menu()
         elif choice == '6':
@@ -69,7 +68,7 @@ class Vehicle:
     '''
     def drive(self):
         #Get the miles driven
-        print ('How many miles will/did you drive?')
+        print ('\nHow many miles will/did you drive?')
         total_drive = input()
         int_total_drive = int(total_drive)
         #Error handling (not full proof) 
@@ -85,7 +84,7 @@ class Vehicle:
             #Bring user back to main menu
             self.menu()
         else:
-            print('Please enter a postive numeric value')
+            print('\nPlease enter a postive numeric value')
             self.drive()
     
 '''
@@ -104,7 +103,7 @@ class Motorcycle(Vehicle):
         #Upon user choice, step into one of the if statements.
         if choice == '1':
             #Pop a wheelie!
-            print('Pop that wheelie!!! WOOOOOO.... oh wait no.... ugh now the lot has a skid mark')
+            print('\nPop that wheelie!!! WOOOOOO.... oh wait no.... ugh now the lot has a skid mark')
             self.special_menu()
         elif choice == '2':
             #Customize helmet
@@ -128,7 +127,7 @@ class Truck(Vehicle):
         #Upon user choice, step into one of the if statements.
         if choice == '1':
             #Dirt field
-            print('YeeeeeHAWWWWW! (dirt is all over your truck but you shreded the field like a boss!)')
+            print('\nYeeeeeHAWWWWW! (dirt is all over your truck but you shreded the field like a boss!)')
             self.special_menu()
         elif choice == '2':
             #Get bigger wheels
@@ -179,7 +178,7 @@ class Car(Vehicle):
         #Upon user choice, step into one of the if statements.
         if choice == '1':
             #Order the babe magnet
-            print('Well, well, well... Player One just entered the building!\n(your babe magnet special has been ordered)')
+            print('\nWell, well, well... Player One just entered the building!\n(your babe magnet special has been ordered)')
             self.special_menu()
         elif choice == '2':
             #Vroom vroom?
@@ -247,7 +246,7 @@ def create_vehicle():
         bus = Bus(make,model,color,gas_capacity,gas_mileage,mileage)
         return bus
     else:
-        print('Please enter a valid Vehicle type.')
+        print('\nPlease enter a valid Vehicle type.')
         main()
 '''
 Main function to handle the program
