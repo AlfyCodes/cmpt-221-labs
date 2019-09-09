@@ -1,13 +1,20 @@
 '''
-Parent Class Vechicle
+Parent Class Vehicle
 will construct properties for vechicle type
 '''
-class Vechicle:
-    def __init__(self, make,model,color):
+class Vehicle:
+    def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
         self.make = make
         self.model = model 
         self.color = color
+        self.fuel_max = fuel_max
+        self.fuel_current = fuel_current
+        self.miles_current = miles_current
        
+    def print_data(self):
+
+        print(self.make,self.model,self.color,self.fuel_max,self.fuel_current,self.miles_current)
+
     def drive(self,fuel_current,miles_current,total_drive):
         self.miles_current = self.miles_current + total_drive
         self.fuel_current = fuel_current - total_drive
@@ -15,41 +22,50 @@ class Vechicle:
 '''
 Child Class Motorcycle
 Will handle three properties
+CURRENTLY TESTING THIS CLASS ONLY
 '''
-class Motorcycle(Vechicle):
-    def __init__(fuel_max,fuel_current,miles_current):
-        super().__init__(self,make,model,color)
-        self.fuel_max = fuel_max
-        self.fuel_current = fuel_current
-        self.miles_current = miles_current
+class Motorcycle(Vehicle):
+    def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
+        super().__init__(make,model,color,fuel_max,fuel_current,miles_current)
 '''
 Child Class Truck
 Will handle three properties
 '''        
-class Truck(Vechicle):
-    def __init__(self,fuel_max,fuel_current,miles_current):
-        self.fuel_max = fuel_max
-        self.fuel_current = fuel_current
-        self.miles_current = miles_current
+class Truck(Vehicle):
+    def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
+        super().__init__(make,model,color,fuel_max,fuel_current,miles_current)
+        
 '''
 Child Class Bus
 Will handle three properties
 '''    
-class Bus(Vechicle):
-    def __init__(self,fuel_max,fuel_current,miles_current):
-        self.fuel_max = fuel_max
-        self.fuel_current = fuel_current
-        self.miles_current = miles_current
+class Bus(Vehicle):
+    def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
+        super().__init__(make,model,color,fuel_max,fuel_current,miles_current)
 '''
 Child Class Bicycle
 Will handle it's own property condition
 '''
-class Bicycle(Vechicle):
-    def __init__(self,condition):
-        self.condition = condition
+class Car(Vehicle):
+    def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
+        super().__init__(make,model,color,fuel_max,fuel_current,miles_current)
 
-#bike = Motorcycle(Harely,Street,Red,20,10,1000)
+'''
+Asking the User the questions to store data
+'''
+print ('What is the Make of your vehicle?')
+make = input()
+
+print('What is the Model of your vehicle?')
+model = input()
+
+print('What is the Color of your vehicle?')
+color = input()
+
+bike = Motorcycle(make,model,color,20,10,1000)
+
+bike.print_data()
  
-#Vechicle.drive(bike)
+#Vehicle.drive(bike)
 
 #print(bike)
