@@ -1,6 +1,6 @@
 '''
 Parent Class Vehicle
-will construct properties for vechicle type_vehicle
+will construct properties for vechicle type
 '''
 class Vehicle:
     '''
@@ -29,7 +29,6 @@ class Vehicle:
     
 '''
 Child Class Motorcycle
-Will handle three properties
 CURRENTLY TESTING THIS CLASS ONLY
 '''
 class Motorcycle(Vehicle):
@@ -37,7 +36,6 @@ class Motorcycle(Vehicle):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
 '''
 Child Class Truck
-Will handle three properties
 '''        
 class Truck(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
@@ -45,14 +43,12 @@ class Truck(Vehicle):
         
 '''
 Child Class Bus
-Will handle three properties
 '''    
 class Bus(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
 '''
 Child Class Bicycle
-Will handle it's own property condition
 '''
 class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
