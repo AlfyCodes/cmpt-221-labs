@@ -62,16 +62,19 @@ class Vehicle:
     Alters ther milage and gas milage depending on how far the person drove
     '''
     def drive(self):
-        '''
-        CHECKPOINT
-        Need to work on the drive function after working on this
-        proceed to the Specail Features that each vehicle type offers
-
-        Almost done you can do this!
-        '''
+        
         print ('How many miles will/did you drive?')
-        self.milage = self.milage + total_drive
-        self.gas_milage = gas_milage - total_drive
+        total_drive = input()
+        int_total_drive = int(total_drive)
+        if int_total_drive > 0:
+            #Problem adding together ints. TypeError: can only concatenate str (not "int") to str
+            
+            self.milage = int(self.milage + int_total_drive)
+            self.gas_milage = self.gas_milage - int_total_drive
+            print('\nUpdated Gas Milage: '+self.gas_milage+ '\nUpdated Milage: '+self.milage)
+        else:
+            print('Please enter a postive numeric value')
+            self.drive()
     
 '''
 Child Class Motorcycle
@@ -106,7 +109,7 @@ class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu! Car')
+        print('\n\nWelcome to the Car special Menu!')
 
 
 '''
