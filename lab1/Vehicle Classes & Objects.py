@@ -61,50 +61,65 @@ class Car(Vehicle):
 Below this line the functions outside of classes will begin
 '''
 
+'''
+Function get_data()
+Grabs all the data about the vehicle from user
+'''
+def get_data():
+    #Questions about the vehicle
+    print ('What is the Make of your vehicle?')
+    make = input()
+    
+    print('What is the Model of your vehicle?')
+    model = input()
+
+    print('What is the Color of your vehicle?')
+    color = input()
+
+    print('What is the max Gas Miles of your vehicle?')
+    gas_capacity = input()
+
+    print('What is the current Gas Miles of your vehicle?')
+    gas_milage = input()
+
+    print('What is the Milage of your vehicle?')
+    milage = input()
+
+    return(make,model,color,gas_capacity,gas_milage,milage)
 
 '''
 Prompt user for data to store into a new vehicle variable
 '''
-def get_data():
-        #Ask the user for type of vehicle so we can properly store to the right class.
-        print ('What type_vehicle of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
-        type_vehicle = input()
-        type_vehicle = type_vehicle.lower()
-'''
-CHECKPOINT
-Need to go through and make sure we are using the right class upon
-the users input. This is the next implementation...
-Example: User chose car... Store all data into Class Car which will super() into Parent Class
+def create_vehicle():
+    #Ask the user for type of vehicle so we can properly store to the right class.
+    print ('What type_vehicle of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
+    type_vehicle = input()
+    type_vehicle = type_vehicle.lower()
 
-Goodnight!
-'''
-        #Error Handling - completed but needs adjustments to flow with the project
-        if type_vehicle == 'car' or type_vehicle == 'truck' or type_vehicle == 'motorcycle' or type_vehicle == 'bus':
-            print('you picked the right type_vehicle')
-        else:
-            print('Please enter a valid Vehicle type.')
-            main()
-
-        #Questions about the vehicle
-        print ('What is the Make of your vehicle?')
-        make = input()
-        
-        print('What is the Model of your vehicle?')
-        model = input()
-
-        print('What is the Color of your vehicle?')
-        color = input()
-
-        print('What is the max Gas Miles of your vehicle?')
-        gas_capacity = input()
-
-        print('What is the current Gas Miles of your vehicle?')
-        gas_milage = input()
-
-        print('What is the Milage of your vehicle?')
-        milage = input()
-        
-        return(type_vehicle,make,model,color,gas_capacity,gas_milage,milage)
+    #Error Handling - completed but needs adjustments to flow with the project
+    if type_vehicle == 'car':
+        print('you chose car')
+        make,model,color,gas_capacity,gas_milage,milage = get_data()
+        car = Car(make,model,color,gas_capacity,gas_milage,milage)
+        return car
+    elif type_vehicle == 'truck':
+        print('you chose truck')
+        make,model,color,gas_capacity,gas_milage,milage = get_data()
+        truck = Truck(make,model,color,gas_capacity,gas_milage,milage)
+        return truck
+    elif type_vehicle == 'motorcycle':
+        print('you chose bike')
+        make,model,color,gas_capacity,gas_milage,milage = get_data()
+        motorcycle = Motorcycle(make,model,color,gas_capacity,gas_milage,milage)
+        return motorcycle
+    elif type_vehicle == 'bus':
+        print('you chose bus')
+        make,model,color,gas_capacity,gas_milage,milage = get_data()
+        bus = Bus(make,model,color,gas_capacity,gas_milage,milage)
+        return bus
+    else:
+        print('Please enter a valid Vehicle type.')
+        main()
 
 
 
@@ -113,7 +128,8 @@ Main function to handle the program
 '''
     
 def main():
-    get_data()
+    vehicle = create_vehicle()
+    vehicle.print_data()
 
 #Start Program
 main()
