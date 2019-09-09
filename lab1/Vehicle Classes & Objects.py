@@ -15,6 +15,40 @@ class Vehicle:
         self.gas_milage = gas_milage
         self.milage = milage
     '''
+    Function Menu
+    Interacitve function that the user can use
+    to calculate various situations depending on
+    vehicle type
+    '''
+    def menu(self):
+
+        print('\n\nWelcome to the Menu\n1. Calculate Drive\n2. Your Gas Capacity\n3. Current Gas Milage\n4. Current Milage\n5. Special Features\n6. Exit Program')
+        choice = input()
+
+        if choice == '1':
+            self.drive() 
+        elif choice == '2':
+            print('choice 2')
+            print('\nYour '+self.make+' ' +self.model+' Gas Capacity is ' +self.gas_capacity)
+            self.menu()
+        elif choice == '3':
+            print('\nCurrent Gas Milage: '+self.gas_milage)
+            self.menu()
+        elif choice == '4':
+            print('\nCurrent Car Milage: '+self.milage)
+            self.menu()
+        elif choice == '5':
+            print('Woopie Specail stuff')
+            self.menu()
+        elif choice == '6':
+            print('Exiting Program')
+            SystemExit
+        else:
+            print('\nPlease enter a numberic value 1-6')
+            self.menu()
+
+
+    '''
     print_data Function
     Print the complete data of the vehicle
     '''   
@@ -25,7 +59,8 @@ class Vehicle:
     drive Function
     Alters ther milage and gas milage depending on how far the person drove
     '''
-    def drive(self,gas_milage,milage,total_drive):
+    def drive(self):
+
         self.milage = self.milage + total_drive
         self.gas_milage = gas_milage - total_drive
     
@@ -125,8 +160,10 @@ Main function to handle the program
 '''
     
 def main():
+    #Create the vehicle, also can call functions from classes by just using 'vehicle' variable.
     vehicle = create_vehicle()
     vehicle.print_data()
+    vehicle.menu()
 
 #Start Program
 main()
