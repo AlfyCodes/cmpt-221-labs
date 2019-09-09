@@ -209,13 +209,13 @@ def get_data():
     print('What is the Color of your vehicle?')
     color = input()
 
-    print('What is the max Gas Miles of your vehicle?')
+    print('What is the max capacity of your fuel tank, in miles, for your vehicle?')
     gas_capacity = input()
 
-    print('What is the current Gas Miles of your vehicle?')
+    print('What is the current fuel tank at, in miles, for your vehicle?')
     gas_mileage = input()
 
-    print('What is the Milage of your vehicle?')
+    print('What is the mileage of your vehicle?')
     mileage = input()
 
     return(make,model,color,gas_capacity,gas_mileage,mileage)
