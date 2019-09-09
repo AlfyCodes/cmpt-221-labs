@@ -60,7 +60,14 @@ class Vehicle:
     Alters ther milage and gas milage depending on how far the person drove
     '''
     def drive(self):
+        '''
+        CHECKPOINT
+        Need to work on the drive function after working on this
+        proceed to the Specail Features that each vehicle type offers
 
+        Almost done you can do this!
+        '''
+        print ('How many miles will/did you drive?')
         self.milage = self.milage + total_drive
         self.gas_milage = gas_milage - total_drive
     
