@@ -18,12 +18,12 @@ def get_info():
 get_change Function
 Takes in two Parameters then computes the change that 
 the user should get back
-'''    
+'''   
 def get_change(items_cost, money_gave):
     #Compute the change
     change = money_gave - items_cost
-    #Gets rid of the decimal by mulitplaying by 100 so we can just deal with whole numbers
-    change = change * 100
+    #Gets rid of the decimal by mulitplying by 100 so we can just deal with whole numbers. Round to avoid any loss in change.
+    change = round(change,3) * 100
     
     #Error handling, if the change comes back negative, prompts the user to try again and goes back to main()
     if change < 0:
