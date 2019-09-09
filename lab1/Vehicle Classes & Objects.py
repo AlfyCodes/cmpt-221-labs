@@ -50,17 +50,22 @@ class Car(Vehicle):
     def __init__(self,make,model,color,fuel_max,fuel_current,miles_current):
         super().__init__(make,model,color,fuel_max,fuel_current,miles_current)
 
+class main():
+    
+    def get_data()
+        print ('What is the Make of your vehicle?')
+        make = input()
+
+    print('What is the Model of your vehicle?')
+    model = input()
+
+    print('What is the Color of your vehicle?')
+    color = input()
+
 '''
 Asking the User the questions to store data
 '''
-print ('What is the Make of your vehicle?')
-make = input()
 
-print('What is the Model of your vehicle?')
-model = input()
-
-print('What is the Color of your vehicle?')
-color = input()
 
 bike = Motorcycle(make,model,color,20,10,1000)
 
