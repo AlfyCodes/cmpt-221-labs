@@ -146,6 +146,23 @@ class Bus(Vehicle):
     def special_menu(self):
         
         print('\n\nWelcome to the Bus special menu!')
+
+        #Menu Text
+        print('\n1. Adjust fare \n2. Bus Decal (trust me...) \n3. Return to main menu')
+        choice = input()
+
+        #Upon user choice, step into one of the if statements.
+        if choice == '1':
+            #Adjust Price
+            print('\nAlright, lets jack up that bus fare to about $25 per ride and uhh... Huh?.. Forget it?')
+            self.special_menu()
+        elif choice == '2':
+            #Bus Decal
+            print('\nOHHHHH YEAHHHHH!!!! Betty Boop all on this BI..... Oh, too revealing?')
+            self.special_menu()
+        elif choice == '3':
+            #Return to Main Menu
+            self.menu()
         
 '''
 Child Class Car: Parent Class is Vehicle
