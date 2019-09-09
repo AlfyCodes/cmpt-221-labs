@@ -96,6 +96,23 @@ class Motorcycle(Vehicle):
         super().__init__(make,model,color,gas_capacity,gas_mileage,mileage)
     def special_menu(self):
         print('\n\nWelcome to the Motorcycle special menu!')
+
+        #Menu Text
+        print('\n1. Ride your truck in our mud field! \n2. Get bigger wheels! (cause whynot?) \n3. Return to main menu')
+        choice = input()
+
+        #Upon user choice, step into one of the if statements.
+        if choice == '1':
+            #Dirt field
+            print('YeeeeeHAWWWWW! (dirt is all over your truck but you shreded the field like a boss!)')
+            self.special_menu()
+        elif choice == '2':
+            #Get bigger wheels
+            print('\nYour wheels are now hundred times bigger! Huh?... take em off?)
+            self.special_menu()
+        elif choice == '3':
+            #Return to Main Menu
+            self.menu()
 '''
 Child Class Truck: Parent Class is Vehicle
 '''        
@@ -115,7 +132,7 @@ class Truck(Vehicle):
             self.special_menu()
         elif choice == '2':
             #Get bigger wheels
-            print('\nYour wheels are now hundred times bigger! Huh?... take em off?)
+            print('\nYour wheels are now hundred times bigger! Huh?... take em off?')
             self.special_menu()
         elif choice == '3':
             #Return to Main Menu
@@ -149,7 +166,6 @@ class Car(Vehicle):
             self.special_menu()
         elif choice == '2':
             #Vroom vroom?
-            print('choice 2')
             print('\n(vroom... vroom!...) Listen... I am crunching for time here, what did you expect?')
             self.special_menu()
         elif choice == '3':
@@ -198,22 +214,18 @@ def create_vehicle():
 
     #Error Handling and the creation of Class varible depending on user's car
     if type_vehicle == 'car':
-        print('you chose car')
         make,model,color,gas_capacity,gas_mileage,mileage = get_data()
         car = Car(make,model,color,gas_capacity,gas_mileage,mileage)
         return car
     elif type_vehicle == 'truck':
-        print('you chose truck')
         make,model,color,gas_capacity,gas_mileage,mileage = get_data()
         truck = Truck(make,model,color,gas_capacity,gas_mileage,mileage)
         return truck
     elif type_vehicle == 'motorcycle':
-        print('you chose bike')
         make,model,color,gas_capacity,gas_mileage,mileage = get_data()
         motorcycle = Motorcycle(make,model,color,gas_capacity,gas_mileage,mileage)
         return motorcycle
     elif type_vehicle == 'bus':
-        print('you chose bus')
         make,model,color,gas_capacity,gas_mileage,mileage = get_data()
         bus = Bus(make,model,color,gas_capacity,gas_mileage,mileage)
         return bus
