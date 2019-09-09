@@ -40,7 +40,7 @@ class Vehicle:
         elif choice == '5':
             #Figure out how to call a child class dependant on vehicle type.
             print('Woopie Specail stuff')
-            main()
+            special_menu(self)
             self.menu()
         elif choice == '6':
             print('Exiting Program')
@@ -81,7 +81,7 @@ class Motorcycle(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu!')
+        print('\n\nWelcome to the special Menu! Motorcycle')
 '''
 Child Class Truck
 '''        
@@ -89,7 +89,7 @@ class Truck(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu!')
+        print('\n\nWelcome to the special Menu! Truck')
         
 '''
 Child Class Bus
@@ -98,15 +98,15 @@ class Bus(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu!')
+        print('\n\nWelcome to the special Menu! Bus')
 '''
-Child Class Bicycle
+Child Class Car
 '''
 class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
     def special_menu(self):
-        print('\n\nWelcome to the special Menu!')
+        print('\n\nWelcome to the special Menu! Car')
 
 
 '''
@@ -175,18 +175,16 @@ def create_vehicle():
 '''
 Main function to handle the program
 '''
-    
+
+def special_menu(self):
+    self.special_menu()
+
 def main():
     #Create the vehicle, also can call functions from classes by just using 'vehicle' variable.
     vehicle = create_vehicle()
     vehicle.print_data()
     vehicle.menu()
 
-    def special_menu():
-        vehicle.special_menu()
-#TESTING
-    def test():
-        main.special_menu()
-
+    special_menu(vehicle)
 #Start Program
 main()
