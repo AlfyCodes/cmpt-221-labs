@@ -20,7 +20,7 @@ class Vehicle:
     '''   
     def print_data(self):
 
-        print(self.make,self.model,self.color,self.gas_capacity,self.gas_milage,self.milage)
+        print('\nVehicle created with the following data:\n\nMake: '+self.make,'\nModel: '+self.model, '\nColor: '+self.color,'\nCar Total Gas Milage: '+self.gas_capacity,'\nCurrent Gas Milage: '+self.gas_milage, '\nTotal Milage: '+self.milage)
     '''
     drive Function
     Alters ther milage and gas milage depending on how far the person drove
@@ -96,7 +96,7 @@ def create_vehicle():
     type_vehicle = input()
     type_vehicle = type_vehicle.lower()
 
-    #Error Handling - completed but needs adjustments to flow with the project
+    #Error Handling and the creation of Class varible depending on user's car
     if type_vehicle == 'car':
         print('you chose car')
         make,model,color,gas_capacity,gas_milage,milage = get_data()
@@ -120,9 +120,6 @@ def create_vehicle():
     else:
         print('Please enter a valid Vehicle type.')
         main()
-
-
-
 '''
 Main function to handle the program
 '''
