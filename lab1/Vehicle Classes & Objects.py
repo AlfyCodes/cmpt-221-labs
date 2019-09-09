@@ -50,18 +50,20 @@ class Car(Vehicle):
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
 
-'''
-Main function to handle all user based inputs
-'''
-    
-def main():
 
-    def get_data()
+
+
+
+
+
+def get_data():
 
         print ('What type of Vehicle do you have? [Car/Truck/Motorcycle/Bus]')
         type = input()
 
-        if type != 'Car' or type != 'Truck' or type != 'Motorcycle' or type != 'Bus':
+        if type.lower == 'car' or type.lower == 'truck' or type.lower == 'motorcycle' or type.lower == 'bus':
+            print('you picked the right type')
+        else:
             print('Please enter a valid Vehicle type.')
             main()
 
@@ -86,10 +88,20 @@ def main():
         
         return(make,model,color,gas_capacity,gas_milage,milage)
 
+
+
+'''
+Main function to handle all user based inputs
+'''
+    
+def main():
+    get_data()
+    
 '''
 Asking the User the questions to store data
 '''
 
+main()
  
 #Vehicle.drive(bike)
 
