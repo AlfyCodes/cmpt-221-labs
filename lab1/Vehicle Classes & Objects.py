@@ -3,18 +3,26 @@ Parent Class Vehicle
 will construct properties for vechicle type
 '''
 class Vehicle:
+    '''
+    The Constructor for all child clases
+    '''
     def __init__(self,make,model,color,gas_capacity,gas_milage,milage):
+        #Sets the following properties Make, Model, Color, Gas Capacity, Gas Milage, Milage
         self.make = make
         self.model = model 
         self.color = color
         self.gas_capacity = gas_capacity
         self.gas_milage = gas_milage
         self.milage = milage
-       
+    '''
+    Print the complete data of the vehicle
+    '''   
     def print_data(self):
 
         print(self.make,self.model,self.color,self.gas_capacity,self.gas_milage,self.milage)
-
+    '''
+    Alters ther milage and gas milage depending on how far the person drove
+    '''
     def drive(self,gas_milage,milage,total_drive):
         self.milage = self.milage + total_drive
         self.gas_milage = gas_milage - total_drive
@@ -58,10 +66,11 @@ class Car(Vehicle):
 
 def get_data():
 
-        print ('What type of Vehicle do you have? [Car/Truck/Motorcycle/Bus]')
+        print ('What type of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
         type = input()
+        type = type.lower()
 
-        if type.lower == 'car' or type.lower == 'truck' or type.lower == 'motorcycle' or type.lower == 'bus':
+        if type == 'car' or type == 'truck' or type == 'motorcycle' or type == 'bus':
             print('you picked the right type')
         else:
             print('Please enter a valid Vehicle type.')
