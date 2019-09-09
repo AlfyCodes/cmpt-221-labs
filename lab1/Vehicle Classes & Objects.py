@@ -1,6 +1,6 @@
 '''
 Parent Class Vehicle
-will construct properties for vechicle type
+will construct properties for vechicle type_vehicle
 '''
 class Vehicle:
     '''
@@ -59,24 +59,28 @@ class Car(Vehicle):
         super().__init__(make,model,color,gas_capacity,gas_milage,milage)
 
 
+'''
+Below this line the functions outside of classes will begin
+'''
 
 
-
-
-
+'''
+Prompt user for data to store into a new vehicle variable
+'''
 def get_data():
+        #Ask the user for type of vehicle so we can properly store to the right class.
+        print ('What type_vehicle of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
+        type_vehicle = input()
+        type_vehicle = type_vehicle.lower()
 
-        print ('What type of Vehicle do you have? \nCar \nTruck \nMotorcycle \nBus')
-        type = input()
-        type = type.lower()
-
-        if type == 'car' or type == 'truck' or type == 'motorcycle' or type == 'bus':
-            print('you picked the right type')
+        #Error Handling - completed but needs adjustments to flow with the project
+        if type_vehicle == 'car' or type_vehicle == 'truck' or type_vehicle == 'motorcycle' or type_vehicle == 'bus':
+            print('you picked the right type_vehicle')
         else:
             print('Please enter a valid Vehicle type.')
             main()
 
-
+        #Questions about the vehicle
         print ('What is the Make of your vehicle?')
         make = input()
         
@@ -95,23 +99,16 @@ def get_data():
         print('What is the Milage of your vehicle?')
         milage = input()
         
-        return(make,model,color,gas_capacity,gas_milage,milage)
+        return(type_vehicle,make,model,color,gas_capacity,gas_milage,milage)
 
 
 
 '''
-Main function to handle all user based inputs
+Main function to handle the program
 '''
     
 def main():
     get_data()
-    
-'''
-Asking the User the questions to store data
-'''
 
+#Start Program
 main()
- 
-#Vehicle.drive(bike)
-
-#print(bike)
