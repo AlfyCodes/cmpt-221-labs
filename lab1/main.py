@@ -22,7 +22,6 @@ the user should get back
 def get_change(items_cost, money_gave):
     #Compute the change
     change = money_gave - items_cost
-
     #Gets rid of the decimal by mulitplaying by 100 so we can just deal with whole numbers
     change = change * 100
     
@@ -31,7 +30,6 @@ def get_change(items_cost, money_gave):
         print('\nYou do not have enough money, try again\n')
         main()
     
-
     return change
 '''
 get_coins Function
@@ -47,6 +45,7 @@ def get_coins(change):
     '''
     def get_new_change(change,coin_amount,coin):
         change = change - (coin_amount * coin)
+        
         return change
     
     #Declarations of Coins
@@ -105,7 +104,7 @@ def display_info(items_cost,money_gave,change,amount_of_quarters,amount_of_dimes
     print('Pennies: ' +str(amount_of_pennies))
 
     print('\nTotal number of coins: ' +str(total_coins))
-    print('Total change: $'+str(change / 100))
+    print('Total change: $'+str(round(change) / 100))
 '''
 main() Function
 To help easily do error handling.
