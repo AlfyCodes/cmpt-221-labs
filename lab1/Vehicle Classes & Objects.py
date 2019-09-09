@@ -1,6 +1,6 @@
 '''
 Parent Class Vehicle
-will construct properties for vechicle type
+will construct properties for "vechicle" type
 '''
 class Vehicle:
     '''
