@@ -4,3 +4,8 @@
     font-family: cursive;
     
 }
+/*Handles the code block border*/
+pre
+{
+    border: 5px solid black;
+}
