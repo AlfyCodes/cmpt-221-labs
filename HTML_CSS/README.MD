@@ -1,28 +1,29 @@
+
+<!-- Table of contents for people navigate quicker-->
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#heading)
-- [Getting Started](#example2)
-- [Prerequisites](#third-example)
-- [Tasks](#fourth-examplehttpwwwfourthexamplecom)
+- [Getting Started](#heading-1)
+- [Prerequisites](#heading-2)
+- [Tasks](#heading-3)
 
-
-
-
+<!--The project name for this assignment-->
 # Project Title: Learning HTML & CSS
 
 The purpose of this project is to *display* a *basic understanding of HTML and CSS*. In this project we will use *common HTML and CSS code* for constructing a website. 
-
+<!--To explain how to start-->
 ## Getting Started
 ---- 
 
 You may download the code and run it for yourself to see how it works or what I've learned.
-
+<!--The knowledge required before moving on-->
 ## Prerequisites
 ----
 
 Knowing the basics of *html and css* code and how to operate it.
-
+<!--List of Task-->
 ## Tasks
 ---
+<!--Tasks for HTML-->
 #### HTML
 
 1. Name the webpage “index.html”
