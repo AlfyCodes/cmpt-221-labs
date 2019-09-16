@@ -1,11 +1,16 @@
 /*Grouping of Multiple CSS selectors, mainly to include links.
 The class will alter any text that calls on it.*/
-a:link, .weird_list, a:visited{
+
+a:link,
+.weird_list,
+a:visited {
     color: yellow;
     font-family: cursive;
 }
+
+
 /*Handles the code block border*/
-pre
-{
+
+pre {
     border: 5px solid black;
 }
