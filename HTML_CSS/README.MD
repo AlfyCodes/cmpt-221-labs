@@ -1,3 +1,12 @@
+##### Table of Contents
+- [Project Title: Learning HTML & CSS](#heading)
+- [Getting Started](#example2)
+- [Prerequisites](#third-example)
+- [Tasks](#fourth-examplehttpwwwfourthexamplecom)
+
+
+
+
 # Project Title: Learning HTML & CSS
 
 The purpose of this project is to *display* a *basic understanding of HTML and CSS*. In this project we will use *common HTML and CSS code* for constructing a website. 
