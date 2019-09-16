@@ -1,8 +1,8 @@
-/*class weird_list will alter index.html*/
-.weird_list{
+/*Grouping of Multiple CSS selectors, mainly to include links.
+The class will alter any text that calls on it.*/
+a:link, .weird_list, a:visited{
     color: yellow;
     font-family: cursive;
-    
 }
 /*Handles the code block border*/
 pre
