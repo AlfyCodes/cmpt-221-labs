@@ -1,7 +1,7 @@
 
 <!-- Table of contents for people navigate quicker-->
 ##### Table of Contents
-- [Project Title: Learning HTML & CSS](#Project%20%20Title:%20Learning%20%20HTML%20&%20CSS)
+- [Project Title: Learning HTML & CSS](#Project%20Title:%20Learning%20HTML%20&%20CSS)
 - [Getting Started](#Getting%20Started)
 - [Prerequisites](#Prerequisites)
 - [Tasks](#Tasks)
