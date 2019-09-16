@@ -1,5 +1,6 @@
 
-<!-- Table of contents for people navigate quicker-->
+<!-- Table of contents for people navigate quicker
+*Issues exist with the spacing within the ID call %20 is not working properly and will not link to topics-->
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#Project%20Title:%20Learning%20HTML%20&%20CSS)
 - [Getting Started](#Getting%20Started)
@@ -27,7 +28,7 @@ You may download the code and run it for yourself to see how it works or what I'
 ----
 
 Knowing the basics of *html and css* code and how to operate it.
-<!--List of Task-->
+<!--List of Tasks-->
 ## Tasks
 ---
 <!--Tasks for HTML-->
@@ -46,7 +47,7 @@ Knowing the basics of *html and css* code and how to operate it.
     
 5. [x] Implement a heading that says, “Look out code below”. Then below the heading, use the code
 tag to put a snippet of your lab 1 python code.
-
+<!--Tasks for CSS-->
 #### CSS
 
 1. [x] Implement inline CSS on your “Hello World” heading. Using inline CSS, turn the heading to
@@ -62,27 +63,27 @@ border around the element and change the font to “fantasy”
 4. [x] Apply the “weird_list” class to list elements 2, 4, and 5.
 5. [x] Link the external CSS file to HTML page
 
-
+<!--Installing Heading (none required)-->
 ## Installing
 ---
 
 No installing is required.
-
+<!--Author Heading-->
 ## Authors
 ---
 
 Alfred Oriz Jr. 
-
+<!--Licensing Heading-->
 ## License
 ---
 
 This project is licensed under my own imgination. 
-
+<!--Acknowledgements Heading-->
 ## Acknowledgments
 ---
 
 Professor Crowley for giving the materials required to improve my skills in *HTML* and *CSS*.
-
+<!--Quote od the "project" Heading-->
 ### Quote of the *project*
 ---
 >"*It's OK to have your eggs in one basket as long as you control what happens to that basket.*" - Elon Musk
