@@ -1,6 +1,6 @@
 
 <!-- Table of contents for people navigate quicker
-*Issues exist with the spacing within the ID call %20 is not working properly and will not link to topics unable to resolve-->
+*Issues exist with the spacing within the ID call '%20' is not working properly and will not link to topics unable to resolve-->
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#Project%20Title:%20Learning%20HTML%20&%20CSS)
 - [Getting Started](#Getting%20Started)
