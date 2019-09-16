@@ -1,18 +1,18 @@
 
 <!-- Table of contents for people navigate quicker
-*Issues exist with the spacing within the ID call %20 is not working properly and will not link to topics-->
+*Issues exist with the spacing within the ID call %20 is not working properly and will not link to topics unable to resolve-->
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#Project%20Title:%20Learning%20HTML%20&%20CSS)
-- [Getting Started](##Getting%20Started)
-- [Prerequisites](##Prerequisites)
-- [Tasks](##Tasks)
-    * [HTML](####HTML)
-    * [CSS](####CSS)
-- [Installing](##Installing)
-- [Authors](##Authors)
-- [License](##License)
-- [Acknowledgments](##Acknowledgments)
-- [Quote of the project](##Quote%20of%20the%20project)
+- [Getting Started](#Getting%20Started)
+- [Prerequisites](#Prerequisites)
+- [Tasks](#Tasks)
+    * [HTML](#HTML)
+    * [CSS](#CSS)
+- [Installing](#Installing)
+- [Authors](#Authors)
+- [License](#License)
+- [Acknowledgments](#Acknowledgments)
+- [Quote of the project](#Quote%20of%20the%20project)
 
 <!--The project name for this assignment-->
 # Project Title: Learning HTML & CSS
