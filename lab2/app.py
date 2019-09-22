@@ -6,13 +6,15 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/index")
 def view_index():
-    return "<h1> Welcome! </h1> <p> You can tell me your name by: '/user/yourname'</p> <p> You can visit the About " \
+    return "<h1> Welcome to the Site! </h1> <p> If you want me to display your name, you can do so by typing: " \
+           "'/user/yourname' into the url</p> <p> You can visit " \
+           "the About " \
            "Me Page here: <a href='http://127.0.0.1:5000/about'>About Page</a> </p>"
 
 
 @app.route("/user/<username>")
 def user_name(username):
-    return "<h1> Hey " + username + "!</h1>"
+    return "<h1> Listen.... " +username +"! <br>It Puts The Lotion On It's Skin Or Else It Gets Hose AGAIN!</br></h1>"
 
 
 @app.route("/about")
