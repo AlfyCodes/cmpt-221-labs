@@ -17,7 +17,16 @@ def user_name(username):
 
 @app.route("/about")
 def about_page():
-    return "<h1> Welcome to the most awesomest page! <p> Why is this the most awesomest page?!? </p> <ul> "
+    return "<h1> Welcome to the most awesomest page! </h1> " \
+           "<p> Why is this the most awesomest page?!? </p> " \
+           "<ul> " \
+           "<li> Because </li>  " \
+           "<li>I </li> " \
+           "<li> Said </li> " \
+           "<li> So... </li> " \
+           "<li> " \
+           "<li> dot dot DOT!!!</li> " \
+           "</ul>"
 
 if __name__ == "__main__":
     app.run()
