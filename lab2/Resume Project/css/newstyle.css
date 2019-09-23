@@ -1,6 +1,26 @@
 /*Current Errors in here. Testing*/
+
+html {
+  background: url(../images/nomnom.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .welcome_box {
     width: 400px;
-    height: 400px;
+    height: 500px;
     background: rgba(0,0,0,0.4);
+    padding: 40px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 140px;
+    text-align: center;
+}
+
+.welcome_pic {
+border-radius: 50%;
+height: 200px;
+width: 200px;
 }
