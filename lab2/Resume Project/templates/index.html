@@ -1,6 +1,9 @@
+<!DOCTYPE html>
 <!--Start of Html-->
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>Welcome!</title>
         <style>
             h1{
                 font-weight: 300;
@@ -9,12 +12,12 @@
                 font-family: monospace;
             }
         </style>
-        <link href = "css/newstyle.css" rel = "stylesheet" type = "text/css"/>
+        <link href = "../static/css/newstyle.css" rel = "stylesheet" type = "text/css"/>
     </head>
 
     <body>
         <div class="welcome_box">
-            <img class="welcome_pic" src="images/icon.jpg">
+            <img class="welcome_pic" src="../static/images/icon.jpg">
             <h1>Mister Nomnoms The VI</h1>
 
             <h5 style="font-family: cursive; font-size:small;font: small-caption;letter-spacing: 1px;">
@@ -29,10 +32,11 @@
             <p class="ps">P.S: Sorry about the background picture... Alfred isn't much of a photographer but hey, he
             tries.</p>
 
-            <audio autoplay controls>
-  <source src="music/nomnom.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>
+            <audio autoplay controls id="audio-example">
+            <!-- Audio code, sometimes It'll autoplay when it wants, usually only the first time but after it won't -->
+            <source src="../static/music/nomnom.mp3">
+            Oh Noes I has music here, where'd it go?!?!
+            </audio>
         </div>
     </body>
 
