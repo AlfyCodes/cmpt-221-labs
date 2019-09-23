@@ -10,7 +10,7 @@ html {
 
 .welcome_box {
     width: 400px;
-    height: 500px;
+    height: 510px;
     background: rgba(0,0,0,0.4);
     padding: 40px;
     color: white;
@@ -23,4 +23,19 @@ html {
 border-radius: 50%;
 height: 200px;
 width: 200px;
+}
+
+.ps {
+
+    font-family: sans-serif;
+    font-size: x-small;
+    letter-spacing: 1px;
+
+}
+
+.break_line{
+width: 400px;
+border-top: 1px solid white;
+
+
 }
