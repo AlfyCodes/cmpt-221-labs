@@ -115,3 +115,33 @@ Main Info
 img.pro_pic {
     border-radius: 50%;
 }
+
+
+/*My Name Class
+Styling for the Profile Name*/
+
+.my_name {
+    font-size: 40px;
+    line-height: 1;
+}
+
+
+/*My Title Class
+Styling for Profile User's Title (under Profile name)*/
+
+.my_title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #236Fb2;
+}
+
+.links {
+    display: flex;
+    margin: 10px 0 20px 0;
+}
+
+.link_item {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
