@@ -1,0 +1,26 @@
+/* Generic Box Sizing
+So that the Padding and the Border does not effect the width
+*/
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 1.5;
+    background: lightgray;
+    COLOR: darkgray;
+}
+
+img {
+    max-width: 100%;
+}
+
+.icon {}
