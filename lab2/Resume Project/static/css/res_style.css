@@ -76,6 +76,10 @@ a:hover {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+/*Section Styling
+Structures the sections and divides each by a gray line*/
+
 section {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -83,3 +87,24 @@ section {
     padding: 24px 0;
     border-bottom: 1px solid lightgray;
 }
+
+
+/*:last-child allows us to construct the last element*/
+
+section:last-child {
+    border-bottom: none;
+}
+
+
+/*Section Title Class
+*/
+
+.section_title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*------- 
+Main Info
+--------*/
