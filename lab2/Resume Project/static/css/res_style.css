@@ -24,7 +24,7 @@ body {
     font-family: "Source Sans Pro", sans-serif;
     line-height: 1.5;
     background: lightgray;
-    COLOR: darkgray;
+    COLOR: gray;
 }
 
 
@@ -35,6 +35,18 @@ img {
 }
 
 
-/*Icon Class*/
+/*Icon Class
+    fill: currentColor - This allows the 'svg' icons to keep it's current color
+    display: inline-block - This allows us to set a width and height on an element, respects top+bottom margins/paddings
+    font-size: inherit - Takes property from its parent element
+    height: 1em - Takes on the current font-size
+    overflow: visible - Handles contents that overflows an element box.
+*/
 
-.icon {}
+.icon {
+    fill: currentColor;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible
+}
