@@ -1,16 +1,24 @@
 /* Generic Box Sizing
 So that the Padding and the Border does not effect the width
-*/
+This is called resetting box-sizing to border-box */
 
 html {
     box-sizing: border-box;
 }
+
+
+/* before and after is a CSS trick to add the border styling from the parent element 'html' before and after
+    The box-sizing: inherit it's styling from the parent element. Do this because it will be easier to change the box-sizing
+    The Asterix is a selector, so selects all elements */
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
+
+/*Setting font type, the line height, background of page, and text color.*/
 
 body {
     font-family: "Source Sans Pro", sans-serif;
@@ -19,8 +27,14 @@ body {
     COLOR: darkgray;
 }
 
+
+/*Set max-width to 100%, so the image will scale down but never scale up from it's original size*/
+
 img {
     max-width: 100%;
 }
+
+
+/*Icon Class*/
 
 .icon {}
