@@ -108,3 +108,10 @@ section:last-child {
 /*------- 
 Main Info
 --------*/
+
+
+/* Styling for the profile picture*/
+
+img.pro_pic {
+    border-radius: 50%;
+}
