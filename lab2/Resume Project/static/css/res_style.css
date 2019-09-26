@@ -220,3 +220,13 @@ Adds structure within the Job Experience*/
 /*----------------------------------------------------
                         Interest
 ------------------------------------------------------*/
+
+.interest_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interest_container img {
+    height: 35px;
+    opacity: 0.75;
+}
