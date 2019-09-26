@@ -9,7 +9,7 @@ def view_index():
 
 @app.route("/user/<username>")
 def user_name(username):
-    return render_template("user.html")
+    return render_template("user.html",username=username)
             
 @app.route("/about")
 def about_page():
