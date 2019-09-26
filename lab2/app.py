@@ -14,7 +14,9 @@ def view_index():
 
 @app.route("/user/<username>")
 def user_name(username):
-    return "<h1> Listen.... " +username +"! <br>It Puts The Lotion On It's Skin Or Else It Gets Hose AGAIN!</br></h1>"
+    return "<h1> AHHH HaHAhAHAha You're Trapped " +username +"!.. <br>It Puts The Lotion On It's Skin Or Else It Gets Hose AGAIN!</br></h1>"
+            
+
 
 
 @app.route("/about")
@@ -26,9 +28,15 @@ def about_page():
            "<li>I </li> " \
            "<li> Said </li> " \
            "<li> So... </li> " \
-           "<li> " \
+           "<li>"\
            "<li> dot dot DOT!!!</li> " \
-           "</ul>"
+           "</ul>"\
+           "<br>"\
+           "<p> On a serious note, I made this website by using Flask. With Flask you can set up routes and also create dynamic routes.</p>" \
+           "<ul>" \
+           "<li> <b>Routes</b> are set by using @flaskname.route('/destination'). Look in your URL and you'll see there is an /about at the end. Thats the route to this AMAZING PAGE!</li>" \
+           "<li> <b>Dynamic Routes</b> are just like routes but differ in that it takes in a response from the user. Depending on what kind of response it's looking for it will act accordingly. For example go back to the /index page and follow the instructions there about telling me your name by adding a route in the url. It's FUN!.... DO EEET!!!!</li>"
+           
 
 if __name__ == "__main__":
     app.run()
