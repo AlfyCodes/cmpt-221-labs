@@ -134,6 +134,11 @@ Divides each Job Experience*/
         margin-bottom: 24px;
         border-bottom: 1px solid lightgray;
     }
+    /* Remove border bottom on last child of the job class*/
+    
+    .job:last-child {
+        border-bottom: none;
+    }
     /* Job Title Container Class
 Adds structure within the Job Experience*/
     
@@ -143,6 +148,8 @@ Adds structure within the Job Experience*/
         margin-bottom: 20px;
         font-size: 18px;
     }
+    /* Job Company Class
+    Adds styling to the Company worked at Text*/
     
     .job_company {
         font-weight: bold;
