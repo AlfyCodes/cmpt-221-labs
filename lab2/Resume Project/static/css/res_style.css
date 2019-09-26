@@ -47,7 +47,7 @@ img {
 */
 
 .icon {
-    fill: currentColor;
+    fill: rgb(223, 6, 6);
     display: inline-block;
     font-size: inherit;
     height: 1em;
@@ -132,7 +132,7 @@ Styling for Profile User's Title (under Profile name)*/
 .my_title {
     font-size: 24px;
     font-weight: 300;
-    color: #236Fb2;
+    color: rgb(178, 35, 35);
 }
 
 .links {
