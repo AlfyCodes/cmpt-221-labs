@@ -143,3 +143,8 @@ Adds structure within the Job Experience*/
         margin-bottom: 20px;
         font-size: 18px;
     }
+    
+    .job_company {
+        font-weight: bold;
+        line-height: 1.2;
+    }
