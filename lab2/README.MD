@@ -73,13 +73,16 @@ Knowing the basics of *Flask, HTML and CSS* code and how to operate it.
     1. [x] Must be browsable via “/index” and “/”
     2. [x] Must use HTML to display text and links
     3. [x] Must include a welcome message with the above-mentioned information
+
 2. [x] An About Webpage
     1. [x] Must be browsable via “/about”
     2. [x] Must use HTML to display text and links
     3. [x] Must include the use of a list element
+
 3. [x] A Dynamic Welcome Page for the name of a User
     1. [x] Must be browsable via “/name/XXXX”. XXX being the name typed in to the URL
     2. [x] Must provide a custom welcome message. Make this funny or interesting for more points
+
 4. [x] Flask program must run without errors
 5. [x] Must be pushed to GitHub
 6. [x] Must follow the best practices for Flask and Python
@@ -90,15 +93,18 @@ Knowing the basics of *Flask, HTML and CSS* code and how to operate it.
     2. [x] Must introduce yourself
     3. [x] Must embed a picture of yourself or something that you do like a hobby/club/etc.
     4. [x] Include any information you think would be important to a potential employer
+
 2. [x] A Digital Resume Page
     1. [x] Must emulate the look of a resume
     2. [x] Must NOT just use HTML paragraphs
     3. [x] Must include coloring and theming of Marist College (Red, White, Black)
+
 3.  [x] Must use all 3 forms of CSS
     1. [x] Inline
     2. [x] Internal
     3. [x] External
-4 [x]. Must use 10 unique HTML elements
+
+4. [x] Must use 10 unique HTML elements
 5. [x] Must use at least 3 different fonts
 6. [x] Should be neat, clean and informative
 7. [x] Flask program must run without errors
