@@ -3,12 +3,12 @@
 *Issues exist with the spacing within the ID call '%20' is not working properly and will not link to topics unable to resolve-->
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#project-title-learning-html--css)
-- [Resources Used](#resources-used)
+- [Resources Used](#Resources-Used)
 - [Getting Started](#Getting-Started)
 - [Prerequisites](#Prerequisites)
 - [Tasks](#Tasks)
-    * [HTML](#HTML)
-    * [CSS](#CSS)
+    * [Part:1 Hello World, Who?](#part1-hello-word-who)
+    * [Part:2 Digital Resume](#part2-digital-resume)
 - [Installing](#Installing)
 - [Authors](#Authors)
 - [License](#License)
@@ -53,10 +53,6 @@ Below are resources I used to help me through this project.
         * https://www.youtube.com/watch?v=sVp6KrFeKNI
     * Intro to HTML / CSS (creating a landing page)
         * https://www.youtube.com/watch?v=jJuHQNULXGs&list=PLsIkqR8inizt8SpD6utVTPhy8gFQzQNug
-
-
-<!--List of Tasks-->
-## Tasks 
 <!--To explain how to start-->
 ## Getting Started
 ---- 
@@ -70,7 +66,7 @@ Knowing the basics of *Flask, HTML and CSS* code and how to operate it.
 <!--List of Tasks-->
 ## Tasks
 ---
-<!--Tasks for Part 1-->
+<!--Tasks for Project:1-->
 #### Part:1 Hello Word, Who?
 
 1. [x] An Index Webpage
@@ -87,7 +83,7 @@ Knowing the basics of *Flask, HTML and CSS* code and how to operate it.
 4. [x] Flask program must run without errors
 5. [x] Must be pushed to GitHub
 6. [x] Must follow the best practices for Flask and Python
-<!--Tasks for CSS-->
+<!--Tasks for Project:2-->
 #### Part:2 Digital Resume
 
 1. [x] A welcome/landing page
