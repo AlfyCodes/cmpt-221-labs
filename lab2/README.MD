@@ -4,6 +4,8 @@
 ##### Table of Contents
 - [Project Title: Learning HTML & CSS](#project-title-learning-html--css)
 - [Resources Used](#Resources-Used)
+- [Errors](#Errors)
+- [Personal Check List](#Personal-Check-List)
 - [Getting Started](#Getting-Started)
 - [Prerequisites](#Prerequisites)
 - [Tasks](#Tasks)
@@ -62,7 +64,14 @@ Below are resources I used to help me through this project.
         * https://www.youtube.com/watch?v=sVp6KrFeKNI
     * Intro to HTML / CSS (creating a landing page)
         * https://www.youtube.com/watch?v=jJuHQNULXGs&list=PLsIkqR8inizt8SpD6utVTPhy8gFQzQNug
+## Errors
+----
+ There were no errors that I was aware of, however, I did come across one problem with the '<audio>' tag. The song was suppose to auto play on the website, but after my first visit it never autoplayed again. Wish I could figure out what the issue there was.
 <!--To explain how to start-->
+## Personal Check List
+----
+* Want to add a Navigation Bar on the top of the website.
+* Want to add real life resume text instead of latin fillers.
 ## Getting Started
 ---- 
 
