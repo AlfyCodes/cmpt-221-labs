@@ -2,5 +2,7 @@
 # Default ignored files
 /workspace.xml
 /venv
+/.idea
+/.vscode
 launch.json 
 settings.json
