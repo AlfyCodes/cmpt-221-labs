@@ -108,13 +108,13 @@ Knowing the basics of *Flask, HTML and CSS* code and how to operate it.
     2. [x] Must NOT just use HTML paragraphs
     3. [x] Must include coloring and theming of Marist College (Red, White, Black)
 
-3.  [x] Must use all 3 forms of CSS
+3.  [x] Must use all 3 forms of CSS (accomplished on landing page)
     1. [x] Inline
     2. [x] Internal
     3. [x] External
 
 4. [x] Must use 10 unique HTML elements
-5. [x] Must use at least 3 different fonts
+5. [x] Must use at least 3 different fonts (accomplished on landing page)
 6. [x] Should be neat, clean and informative
 7. [x] Flask program must run without errors
 8. [x] Must be pushed to GitHub
