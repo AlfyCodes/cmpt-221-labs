@@ -24,6 +24,12 @@ The purpose of these projects is to *display* a *basic understanding of HTML and
 ----
 Below are resources I used to help me through this project.
 
+* SVG
+    * https://www.w3schools.com/html/html5_svg.asp
+
+* Styling Images
+    * https://www.w3schools.com/html/html5_svg.asp
+
 * Overflow
     * https://www.w3schools.com/cssref/pr_pos_overflow.asp
     * https://www.w3schools.com/cssref/tryit.asp?filename=trycss_inherit
@@ -35,11 +41,11 @@ Below are resources I used to help me through this project.
 * Inline
     * https://www.w3schools.com/css/css_inline-block.asp
 
-* After before
+* After Before
     * https://css-tricks.com/almanac/selectors/a/after-and-before/
     * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 
-* Text decoration
+* Text Decoration
     * https://www.w3schools.com/cssref/pr_text_text-decoration.asp
 
 * Width Property
@@ -47,6 +53,9 @@ Below are resources I used to help me through this project.
 
 * Selectors
     * https://www.w3schools.com/cssref/css_selectors.asp
+
+* @Media
+    * https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 
 * Tutorials
     * HTML / CSS Resume
