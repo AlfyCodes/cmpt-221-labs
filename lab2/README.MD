@@ -64,14 +64,18 @@ Below are resources I used to help me through this project.
         * https://www.youtube.com/watch?v=sVp6KrFeKNI
     * Intro to HTML / CSS (creating a landing page)
         * https://www.youtube.com/watch?v=jJuHQNULXGs&list=PLsIkqR8inizt8SpD6utVTPhy8gFQzQNug
+<!--List of Erros I'm facing-->
 ## Errors
 ----
- There were no errors that I was aware of, however, I did come across one problem with the '<audio>' tag. The song was suppose to auto play on the website, but after my first visit it never autoplayed again. Wish I could figure out what the issue there was.
-<!--To explain how to start-->
+
+ There were no errors that I was aware of, however, I did come across one problem with the 'audio' tag. The song was suppose to auto play on the website, but after my first visit it never autoplayed again. Wish I could figure out what the issue there was.
+<!--Things that I want to add to the project-->
 ## Personal Check List
 ----
+
 * Want to add a Navigation Bar on the top of the website.
-* Want to add real life resume text instead of latin fillers.
+* Want to add real life resume text instead of latin fillers. (for Mr. Nomnoms) *Currently working on my resume with a professor. 
+<!--To explain how to start-->
 ## Getting Started
 ---- 
 
