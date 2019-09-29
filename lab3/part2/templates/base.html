@@ -22,7 +22,9 @@
 </head>
 
 <body id="page-top">
-    {% block body %} {% block nav %} {% endblock %} {% block masthead %} {% endblock %} {% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %} {% endblock %}
+    {% block body %}
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav"> {% block nav %} {% endblock %}</nav>
+    {% block masthead %} {% endblock %} {% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %} {% endblock %}
 
 
 </body>
