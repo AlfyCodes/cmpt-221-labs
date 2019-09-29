@@ -11,6 +11,6 @@ def root():
     return render_template('index.html'), 200
 
 #Run Flask Programmaticcally
-if __name__ == 'main':
+if __name__ == '__main__':
     #Debug is true, host is local, and port set to 80
-    app.run(debug=true,host='127.0.01', port=80)
+    app.run(debug=True, host='127.0.0.1', port=80)
