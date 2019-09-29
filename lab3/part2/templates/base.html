@@ -25,6 +25,9 @@
     {% block body %} {% endblock %}
 </body>
 <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">{% block nav %} {% endblock %}</nav>
-<header class="masthead bg-primary text-white text-center">{% block masthead %} {% endblock %}</header> {% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %}
+{% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %}
 
 </html>
+
+
+<header class="masthead bg-primary text-white text-center">{% block masthead %} {% endblock %}</header>
