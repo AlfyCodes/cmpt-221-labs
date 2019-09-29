@@ -1,20 +1,32 @@
 {% extends 'base.html' %}
+<!--Title-->
+{% block linkedin %}Alfred Ortiz Jr.{% endblock title %}
+
 
 <!--The Masthead-->
 {% block name %} {{ name }} {% endblock %}
 
 {% block filePath %}../static/img/icon.jpg{% endblock %}
 
-{% block typeWork %} {{ workType }} {% endblock %}
+{% block typeWork %} {{ workType }} {% endblock masthead %}
 <!--End Masthead-->
 
 <!--The Portfolio-->
 <!--Item1-->
-{% block interestImg1 %}../static/img/portfolio/football.png{% endblock %}
+{% block interestImg1 %}
+    ../static/img/portfolio/football.png
+{% endblock %}
+
 {% block proMod1 %}Football{% endblock %}
-{% block modalImg1 %}../static/img/portfolio/football.png{% endblock%}
-{% block modText1 %}Use to play football in highschool. I played wide receiver and safety. Now I play for a team for the
-Marist Flag Football club. {% endblock %}
+
+{% block modalImg1 %}
+    ../static/img/portfolio/football.png
+{% endblock%}
+
+{% block modText1 %}
+    Use to play football in highschool. I played wide receiver and safety. Now I play for a team for the
+    Marist Flag Football club. 
+{% endblock modText1 %}
 <!--Item2-->
 {% block interestImg2 %}../static/img/portfolio/food.png{% endblock %}
 {% block proMod2 %}Food{% endblock %}
