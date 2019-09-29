@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}Freelancer - Start Bootstrap Theme</title>
 
     <!-- Custom fonts for this theme -->
     <link href="../static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -22,15 +22,13 @@
 </head>
 
 <body id="page-top">
-    {% block body %}
-    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav"> {% block nav %} {% endblock %}</nav>
-    <div class="container">{% block container %} {% endblock %}</div>
-    <div class="container">{% block container2 %} {% endblock %}</div>
-    <div class="container">{% block container3 %} {% endblock %}</div>
-    <div class="container">{% block container4 %} {% endblock %}</div>
-    {% block masthead %} {% endblock %} {% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %} {% endblock %}
-
-
+    {% block body %} {% endblock %}
 </body>
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">{% block nav %} {% endblock %}</nav>
+<div class="container">{% block container %} {% endblock %}</div>
+<div class="container">{% block container2 %} {% endblock %}</div>
+<div class="container">{% block container3 %} {% endblock %}</div>
+<div class="container">{% block container4 %} {% endblock %}</div>
+{% block masthead %} {% endblock %} {% block portfolio %} {% endblock %} {% block about %} {% endblock %} {% block contact %} {% endblock %} {% block foot %} {% endblock %}
 
 </html>
