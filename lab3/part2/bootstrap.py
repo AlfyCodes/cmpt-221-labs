@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/root')
 def root():
     #return index html
-    return render_template('index.html'), 200
+    return render_template('index.html', name='Alfred Ortiz Jr', workType='Engineer - National Guard Air Force - Father'), 200
 
 #Run Flask Programmaticcally
 if __name__ == '__main__':
