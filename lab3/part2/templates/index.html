@@ -18,9 +18,9 @@ I wanted to test it out and made sure it worked-->
     {{ name }}
 {% endblock name %}
 
-{% block filePath %}
-    ../static/img/icon.jpg
-{% endblock filePath %}
+{% block profilePic %}
+{{ url_for('static', filename='img/icon.jpg', _external=True) }}
+{% endblock profilePic %}
 
 {% block typeWork %}
     {{ workType }}
@@ -31,7 +31,7 @@ I wanted to test it out and made sure it worked-->
 
 <!--Item1-->
 {% block interestImg1 %}
-    ../static/img/portfolio/football.png
+    {{ url_for('static', filename='img/football.png', _external=True) }}
 {% endblock interestImg1 %}
 
 {% block proMod1 %}
@@ -39,7 +39,7 @@ I wanted to test it out and made sure it worked-->
 {% endblock proMod1 %}
 
 {% block modalImg1 %}
-    ../static/img/portfolio/football.png
+    {{ url_for('static', filename='img/football.png', _external=True) }}
 {% endblock modalImg1 %}
 
 {% block modText1 %}
