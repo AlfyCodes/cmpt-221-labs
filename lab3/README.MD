@@ -2,14 +2,14 @@
 <!-- Table of contents for people navigate quicker
 *Issues exist with the spacing within the ID call '%20' is not working properly and will not link to topics unable to resolve-->
 ##### Table of Contents
-- [Project Title: Bootstrap & Jinja](#project-title-learning-html--css)
+- [Project Title: Bootstrap & Jinja](#project-title-bootstrap--jinja)
 - [Resources Used](#Resources-Used)
 - [Errors](#Errors)
 - [Personal Check List](#Personal-Check-List)
 - [Getting Started](#Getting-Started)
 - [Prerequisites](#Prerequisites)
 - [Tasks](#Tasks)
-    * [Part:1 Downloading Bootstrap and Getting it Running!](#part1-hello-word-who)
+    * [Part:1 Downloading Bootstrap and Getting it Running!](#part1-downloading-bootstrap-and-getting-it-running)
     * [Part:2 Making the Webpage your Own](#part2-making-the-webpage-your-own)
 - [Installing](#Installing)
 - [Authors](#Authors)
@@ -65,7 +65,7 @@ Knowing the basics of *Flask, Jinja, HTML and CSS* code and how to operate it.
 2. [x] Get the “index.html” page working with Flask. 
     1. [x] Create a python file named, “bootstrap.py”
     2. [x] Create a route that will display this page. *The route should be the root route.* 
-    3. [x]Additionally, the port that Flask runs on should be changed from 5000 to 80. 
+    3. [x] Additionally, the port that Flask runs on should be changed from 5000 to 80. 
 
 3. [x] Once created, go ahead and run your Flask server. 
     1. [x] Browse to the IP of your Flask server and look at the webpage. 
@@ -91,12 +91,12 @@ Knowing the basics of *Flask, Jinja, HTML and CSS* code and how to operate it.
     1. [X] Replace the “start bootstrap” text with your full name
     2. [X] Replace the image with a picture of you
     3. [X] Replace the words, “Graphic Artist - Web Designer – Illustrator” with something that describes you.
-            [X] Example: Computer Scientist, IBMer, Marist Graduate
+        * [X] Example: Computer Scientist, IBMer, Marist Graduate
 
 3. [X] Customize the Portfolio Section
     1. [X] Replace all the images with activates/clubs/hobbies that you’re into
     2. [X] Replace the text and title associated with each image 
-            [X](HINT: click on the images for a popup to understand what I am talking about)
+        * [X] (HINT: click on the images for a popup to understand what I am talking about)
 
 4. [X] Customize the About section
     1. [X] Replace the text with text about you. Pretend you making this for potential employers, what information would you want them to know about you!
