@@ -60,8 +60,9 @@ Knowing the basics of *Flask, Jinja, HTML and CSS* code and how to operate it.
 <!--Tasks for Project:1-->
 #### Part:1 Downloading Bootstrap and Getting it Running!
 
-1. [x] Extract the zip, then grab all the files and folders under the folder, “startbootstrap-freelancergh-pages” These should go under the “Lab 3” folder you made for this lab.
-
+1. [x] In this first part we will be downloading the bootstrap theme called “Freelancer”. Download the theme via this link, https://startbootstrap.com/themes/freelancer/
+    2. [x] Extract the zip, then grab all the files and folders under the folder, “startbootstrap-freelancergh-pages” These should go under the “Lab 3” folder you made for this lab.
+    
 2. [x] Get the “index.html” page working with Flask. 
     1. [x] Create a python file named, “bootstrap.py”
     2. [x] Create a route that will display this page. *The route should be the root route.* 
@@ -132,7 +133,7 @@ This project is licensed under my own imagination.
 ## Acknowledgments
 ---
 
-Professor Crowley for giving the materials required to improve my skills in *Flask, HTML and CSS*.
+Professor Crowley for giving the materials required to improve my skills in *Flask, Jinja, HTML and CSS*.
 <!--Quote od the "project" Heading-->
 ### Quote of the *project*
 ---
