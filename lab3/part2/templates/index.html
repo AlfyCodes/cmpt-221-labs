@@ -1,14 +1,18 @@
 {% extends 'base.html' %}
 <!--Title-->
-{% block linkedin %}Alfred Ortiz Jr.{% endblock title %}
+{% block title %}Alfred Ortiz Jr.{% endblock title %}
 
+<!--Nav-->
+{% block navName %}
+    Marist College
+{% endblock navName %}
 
 <!--The Masthead-->
 {% block name %} {{ name }} {% endblock %}
 
 {% block filePath %}../static/img/icon.jpg{% endblock %}
 
-{% block typeWork %} {{ workType }} {% endblock masthead %}
+{% block typeWork %} {{ workType }} {% endblock %}
 <!--End Masthead-->
 
 <!--The Portfolio-->
@@ -21,18 +25,29 @@
 
 {% block modalImg1 %}
     ../static/img/portfolio/football.png
-{% endblock%}
+{% endblock %}
 
 {% block modText1 %}
     Use to play football in highschool. I played wide receiver and safety. Now I play for a team for the
-    Marist Flag Football club. 
+    Marist Flag Football club.
 {% endblock modText1 %}
 <!--Item2-->
-{% block interestImg2 %}../static/img/portfolio/food.png{% endblock %}
-{% block proMod2 %}Food{% endblock %}
-{% block modalImg2 %}../static/img/portfolio/food.png{% endblock%}
-{% block modText2 %}I love food, can't get enough of it. I enjoy red meats, and steak is my all time favorite. I mostly
-cook spanish dishes myself.{% endblock %}
+{% block interestImg2 %}
+    ../static/img/portfolio/food.png
+{% endblock interestImg2 %}
+
+{% block proMod2 %}
+    Food
+{% endblock proMod2 %}
+
+{% block modalImg2 %}
+    ../static/img/portfolio/food.png
+{% endblock modalImg2 %}
+
+{% block modText2 %}
+    I love food, can't get enough of it. I enjoy red meats, and steak is my all time favorite. I mostly
+    cook spanish dishes myself.
+{% endblock modText2 %}
 <!--Item3-->
 {% block interestImg3 %}../static/img/portfolio/family.png{% endblock %}
 {% block proMod3 %}Family{% endblock %}
@@ -42,7 +57,7 @@ to school and pursuing my degree.{% endblock %}
 <!--Item4-->
 {% block interestImg4 %}../static/img/portfolio/gaming.jpg{% endblock %}
 {% block proMod4 %}Gaming{% endblock %}
-{% block modalImg4 %}../static/img/portfolio/gaming.jpg{% endblock%}
+{% block modalImg4 %}../static/img/portfolio/gaming.jpg{% endblock %}
 {% block modText4 %}Hardcore gamer til the day I die. I absolutely love gaming. Rpg titles are my favorite, however, I'm
 very competitive so you'll see me play a lot of league of legends.{% endblock %}
 <!--Item5-->
@@ -63,7 +78,8 @@ difficulty getting jobs due to a handicap, can just use a VR.{% endblock %}
 <!--About Me-->
 {% block aboutMe1 %}In my personal life I have found that I enjoy a humble simple life. I don't need much to keep going,
 I have all the motivation I need, and strive for greatness in everything I do.{% endblock %}
-{% block aboutMe2 %}In a working environment I like to be as helpful as I can. Adapt to any situation and provide help to
+{% block aboutMe2 %}In a working environment I like to be as helpful as I can. Adapt to any situation and provide help
+to
 others who may need it. I believe working together as a team is key. Through communication and strong work ethics I will
 get through the day.{% endblock %}
 <!--End About Me-->
