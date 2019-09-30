@@ -18,7 +18,7 @@
 - [Quote of the project](#Quote-of-the-project)
 
 <!--The project name for this assignment-->
-# Project Title: Learning HTML & CSS
+# Project Title: Flask, Html & CSS
 
 The purpose of these projects is to *display* a *basic understanding of HTML and CSS*. In this project we will use *Flask, HTML and CSS* for constructing a website.
 <!--Resources I used to research and help me conceptually-->
