@@ -38,7 +38,7 @@ Below are resources I used to help me through this project.
 ## Errors
 ----
 
- There were no errors that I was aware of, however, I did come across one problem with portfolio images. I was trying to figure out how to center them within the container but have not figured it out
+ There were no errors that I was aware of, however, I did come across one problem with portfolio images. I was trying to figure out how to center them within the container but have not figured it out.
 <!--Things that I want to add to the project-->
 ## Personal Check List
 ----
