@@ -6,3 +6,6 @@ class ContactForm(FlaskForm):
 
     name = StringField(label= "Name", validators=[DataRequired()])
     email = StringField("Email", validators=[Email(), DataRequired()])
+    phoneNum = StringField("Phone", validators=[Optional()])
+    message = TextAreaField("Message", validators=[DataRequired()])
+    submit = SubmitField("Submit")
