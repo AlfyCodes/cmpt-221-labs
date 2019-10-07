@@ -16,7 +16,7 @@ def root():
     #Check for submittals
 
     if forms.validate_on_submit():
-        print("here")
+        print("Test")
         flash("A new form has been submitted: Name {}, Phone {}, Message{}" .format(forms.name.data, forms.email.data, forms.phone_number.data, forms.message.data))
     #return index html
     return render_template('index.html', name='Alfred Ortiz Jr', workType='Engineer - National Guard Air Force - Father', forms=forms), 200
