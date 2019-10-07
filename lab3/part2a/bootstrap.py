@@ -1,6 +1,6 @@
-from flask import Flask, flash, print, redirect, render_template;
+from flask import Flask, flash, redirect, render_template;
 #import from forms.py that was created
-from InClass.FlaskWTF.forms import ContactForm
+from forms import ContactForm
 
 #Flask Object
 app = Flask(__name__)
@@ -15,8 +15,8 @@ def root():
 
     #Check for submittals
 
-    if forms.validateOnSubmit():
-        print("ok")
+    if forms.validate_on_submit():
+        print("here")
         flash("A new form has been submitted: Name {}, Phone {}, Message{}" .format(forms.name.data, forms.email.data, forms.phone_number.data, forms.message.data))
     #return index html
     return render_template('index.html', name='Alfred Ortiz Jr', workType='Engineer - National Guard Air Force - Father', forms=forms), 200
