@@ -115,9 +115,10 @@ Knowing the basics of *Flask, Jinja, HTML and CSS* code and how to operate it.
 8. [X] Customize the “Start Bootstrap” text in the top navigation bar with “Marist College”
 
 #### Part:2a Advance Templating & Contact Form Submittal by Flask-WTF
-    Brief description: For those who wanted an extra challenge were tasked with making the blocks more dynamic. I feel I've gotten a grasp on the dynamic portion or at least how to implement it. In this task I looked over my professors code and tried to follow the scheme of things. I had to scrap the project two or three times before I finally got it. 
+    
+Brief description: For those who wanted an extra challenge were tasked with making the blocks more dynamic. I feel I've gotten a grasp on the dynamic portion or at least how to implement it. In this task I looked over my professors code and tried to follow the scheme of things. I had to scrap the project two or three times before I finally got it. 
 
-    Contact form submittal was the next part of the challenge. I followed my professors code closely because I had no clue what I was doing. Before doing so I had to install a pip package (python Flask-Wtf). I later referred to chapter 4 in the text to try to understand how to call on a .py file within a .py file. There was no specific reference, so I left the code in, and it worked regardless of the errors that my IDE picked up. I scraped the submittal form found inside the bootstrap code, then replaced it with the Flask-WTF. 
+Contact form submittal was the next part of the challenge. I followed my professors code closely because I had no clue what I was doing. Before doing so I had to install a pip package (python Flask-Wtf). I later referred to chapter 4 in the text to try to understand how to call on a .py file within a .py file. There was no specific reference, so I left the code in, and it worked regardless of the errors that my IDE picked up. I scraped the submittal form found inside the bootstrap code, then replaced it with the Flask-WTF. 
 <!--Installing Heading (none required)-->
 ## Installing
 ---
