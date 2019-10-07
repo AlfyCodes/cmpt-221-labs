@@ -1,1 +1,168 @@
 {% extends "about.html" %}
+
+<!--Title-->
+{% block title %}
+    Alfred Ortiz Jr.
+{% endblock title %}
+<!--End Title-->
+
+<!--Nav-->
+{% block navName %}
+    Marist College
+{% endblock navName %}
+<!--End Nav-->
+
+<!--The Masthead
+In here I used my knowledge in return variable because 
+I wanted to test it out and made sure it worked-->
+{% block name %}
+    {{ name }}
+{% endblock name %}
+
+{% block profilePic %}
+{{ url_for('static', filename='img/icon.jpg', _external=True) }}
+{% endblock profilePic %}
+
+{% block typeWork %}
+    {{ workType }}
+{% endblock typeWork %}
+<!--End Masthead-->
+
+<!--The Portfolio-->
+
+<!--Item1-->
+{% block interestImg1 %}
+    {{ url_for('static', filename='img/portfolio/football.png', _external=True) }}
+{% endblock interestImg1 %}
+
+{% block proMod1 %}
+    Football
+{% endblock proMod1 %}
+
+{% block modalImg1 %}
+    {{ url_for('static', filename='img/portfolio/football.png', _external=True) }}
+{% endblock modalImg1 %}
+
+{% block modText1 %}
+    Use to play football in highschool. I played wide receiver and safety. Now I play for a team for the
+    Marist Flag Football club.
+{% endblock modText1 %}
+
+<!--Item2-->
+{% block interestImg2 %}
+    {{ url_for('static', filename='img/portfolio/food.png', _external=True) }}
+{% endblock interestImg2 %}
+
+{% block proMod2 %}
+    Food
+{% endblock proMod2 %}
+
+{% block modalImg2 %}
+    {{ url_for('static', filename='img/portfolio/food.png', _external=True) }}
+{% endblock modalImg2 %}
+
+{% block modText2 %}
+    I love food, can't get enough of it. I enjoy red meats, and steak is my all time favorite. I mostly
+    cook spanish dishes myself.
+{% endblock modText2 %}
+
+<!--Item3-->
+{% block interestImg3 %}
+    {{ url_for('static', filename='img/portfolio/family.png', _external=True) }}
+{% endblock interestImg3 %}
+
+{% block proMod3 %}
+    Family
+{% endblock proMod3 %}
+
+{% block modalImg3 %}
+    {{ url_for('static', filename='img/portfolio/family.png', _external=True) }}
+{% endblock modalImg3 %}
+
+{% block modText3 %}
+    I have a wife, and a son. Love them both with all my heart as they are the backbone to me returning
+    to school and pursuing my degree.
+{% endblock modText3 %}
+
+<!--Item4-->
+{% block interestImg4 %}
+    {{ url_for('static', filename='img/portfolio/gaming.jpg', _external=True) }}
+{% endblock interestImg4 %}
+
+{% block proMod4 %}
+    Gaming
+{% endblock proMod4 %}
+
+{% block modalImg4 %}
+    {{ url_for('static', filename='img/portfolio/gaming.jpg', _external=True) }}
+{% endblock modalImg4 %}
+
+{% block modText4 %}
+    Hardcore gamer til the day I die. I absolutely love gaming. Rpg titles are my favorite, however, I'm
+    very competitive so you'll see me play a lot of League of Legends.
+{% endblock modText4 %}
+
+<!--Item5-->
+{% block interestImg5 %}
+    {{ url_for('static', filename='img/portfolio/VR.jpg', _external=True) }}
+{% endblock interestImg5 %}
+
+{% block proMod5 %}
+    Virtual Reality
+{% endblock proMod5 %}
+
+{% block modalImg5 %}
+    {{ url_for('static', filename='img/portfolio/VR.jpg', _external=True) }}
+{% endblock modalImg5 %}
+
+{% block modText5 %}
+    Virtual Reality has changed my life! It's absolutely a must have in every home. Personally I can't
+    wait until they make a full blow MMO for VR. I'm on team HTC Vive, because of the steam software.
+{% endblock modText5 %}
+
+<!--Item6-->
+{% block interestImg6 %}
+    {{ url_for('static', filename='img/portfolio/coding.png', _external=True) }}
+{% endblock interestImg6 %}
+
+{% block proMod6 %}
+    Coding
+{% endblock proMod6 %}
+
+{% block modalImg6 %}
+    {{ url_for('static', filename='img/portfolio/coding.png', _external=True) }}
+{% endblock%}
+
+{% block modText6 %}
+    Coding, coding, coding! I can't wait until I'm able to just code on the fly. However, I know I'll
+    always be learning something new and researching. My dream is to control robots with virtual reality so people who have
+    difficulty getting jobs due to a handicap, can just use a VR.
+{% endblock modText6 %}
+<!--End Portfolio-->
+
+<!--About Me-->
+{% block aboutMe1 %}
+    In my personal life I have found that I enjoy a humble simple life. I don't need much to keep going,
+    I have all the motivation I need, and strive for greatness in everything I do.
+{% endblock aboutMe1 %}
+
+{% block aboutMe2 %}
+    In a working environment I like to be as helpful as I can. Adapt to any situation and provide help to
+    others who may need it. I believe working together as a team is key. Through communication and strong work ethics I will
+    get through the day.
+{% endblock aboutMe2 %}
+<!--End About Me-->
+
+<!--Footer-->
+{% block homeAdd %}
+    3399 North Rd,
+{% endblock homeAdd %}
+
+{% block stateAdd %}
+    Poughkeepsie, NY 12601
+{% endblock stateAdd %}
+
+{% block linkedin %}
+    https://www.linkedin.com/in/alfred-ortiz-36a729121/
+{% endblock linkedin %}
+<!--End Footer-->
